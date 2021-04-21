@@ -9,6 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock x:Name="UserTextBlock" HorizontalAlignment="Stretch" Margin="0,150,0,0" Text="Usuario" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" FontStretch="Normal" FontWeight="Normal" FontStyle="Normal" />
+        <TextBox x:Name="UsuarioTextBox" HorizontalAlignment="Stretch" Margin="0,200,0,0" Text="Usuario" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30"/>
+        <TextBlock x:Name="PassWordTextBlock" HorizontalAlignment="Stretch" Margin="0,250,0,0" Text="Contraseña" TextWrapping="Wrap" VerticalAlignment="Top" Height="50"  Width="180" FontSize="30"/>
+        <TextBox x:Name="PassWordTextBox" HorizontalAlignment="Stretch" Margin="0,300,0,0" Text="Contraseña" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" />
+
 
     </Grid>
 </Page>

@@ -26,5 +26,6 @@ namespace ProyectoFinal
         {
             this.InitializeComponent();
         }
+
     }
 }
