@@ -9,10 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock x:Name="UserTextBlock" HorizontalAlignment="Stretch" Margin="0,150,0,0" Text="Usuario" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" FontStretch="Normal" FontWeight="Normal" FontStyle="Normal" />
-        <TextBox x:Name="UsuarioTextBox" HorizontalAlignment="Stretch" Margin="0,200,0,0" Text="Usuario" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30"/>
-        <TextBlock x:Name="PassWordTextBlock" HorizontalAlignment="Stretch" Margin="0,250,0,0" Text="Contraseña" TextWrapping="Wrap" VerticalAlignment="Top" Height="50"  Width="180" FontSize="30"/>
-        <TextBox x:Name="PassWordTextBox" HorizontalAlignment="Stretch" Margin="0,300,0,0" Text="Contraseña" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" />
+        <TextBlock x:Name="UserTextBlock" Margin="550,158,550,0" Text="Usuario:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" FontStretch="Normal" FontWeight="Normal" FontStyle="Normal" SelectionChanged="UserTextBlock_SelectionChanged" />
+        <TextBox x:Name="UsuarioTextBox" HorizontalAlignment="Stretch" Margin="0,200,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" PlaceholderText="usuario"/>
+        <TextBlock x:Name="PassWordTextBlock" Margin="550,260,550,0" Text="Contraseña:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50"  Width="180" FontSize="30"/>
+        <TextBox x:Name="PassWordTextBox" HorizontalAlignment="Stretch" Margin="0,300,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" PlaceholderText="contraseña" />
+        <Button Content="Acceder" HorizontalAlignment="Stretch" Margin="550,364,550,0" VerticalAlignment="Top" Height="50" Width="180" FontSize="30"/>
 
 
     </Grid>

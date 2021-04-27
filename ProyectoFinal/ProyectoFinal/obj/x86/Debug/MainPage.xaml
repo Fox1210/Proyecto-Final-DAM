@@ -9,14 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        
-        <Rectangle Height="406" Margin="571,172,571,422" Stroke="Black" Width="358"/>
-        
-        <TextBlock x:ConnectionId='2' x:Name="UserTextBlock" HorizontalAlignment="Left" Margin="700,200,0,0" Text="Usuario" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="120" FontSize="30" />
-        <TextBox x:ConnectionId='3' x:Name="UsuarioTextBox" HorizontalAlignment="Left" Margin="700,250,0,0" Text="Usuario" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="120" FontSize="30"/>
-        <TextBlock x:ConnectionId='4' x:Name="PassWordTextBlock" HorizontalAlignment="Left" Margin="700,300,0,0" Text="Contraseña" TextWrapping="Wrap" VerticalAlignment="Top" Height="50"  Width="120" FontSize="30"/>
-        <TextBox x:ConnectionId='5' x:Name="PassWordTextBox" HorizontalAlignment="Left" Margin="700,350,0,0" Text="Contraseña" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="120" FontSize="30"/>
-        
+        <TextBlock x:ConnectionId='2' x:Name="UserTextBlock" HorizontalAlignment="Stretch" Margin="0,150,0,0" Text="Usuario" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" FontStretch="Normal" FontWeight="Normal" FontStyle="Normal" />
+        <TextBox x:ConnectionId='3' x:Name="UsuarioTextBox" HorizontalAlignment="Stretch" Margin="0,200,0,0" Text="Usuario" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30"/>
+        <TextBlock x:ConnectionId='4' x:Name="PassWordTextBlock" HorizontalAlignment="Stretch" Margin="0,250,0,0" Text="Contraseña" TextWrapping="Wrap" VerticalAlignment="Top" Height="50"  Width="180" FontSize="30"/>
+        <TextBox x:ConnectionId='5' x:Name="PassWordTextBox" HorizontalAlignment="Stretch" Margin="0,300,0,0" Text="Contraseña" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" />
 
 
     </Grid>
