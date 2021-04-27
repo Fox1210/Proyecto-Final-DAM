@@ -27,5 +27,9 @@ namespace ProyectoFinal
             this.InitializeComponent();
         }
 
+        private void acceder(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
