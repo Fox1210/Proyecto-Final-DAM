@@ -8,11 +8,11 @@ namespace ProyectoFinal
 {
     class Usuario
     {
-        public int IdUser { get; set; };
-        public string Name { get; set; };
-        public string Password { get; set; };
-        public string Email { get; set; };
-        public int Type { get; set; };
+        public int IdUser { get; set; }
+        public string Name { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+        public int Type { get; set; }
 
         public Usuario(int idUser, string name, string password, string email, int type)
         {
