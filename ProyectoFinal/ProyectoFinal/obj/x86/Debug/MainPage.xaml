@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="ProyectoFinal.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProyectoFinal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock x:ConnectionId='2' x:Name="UserTextBlock" Margin="550,158,550,0" Text="Usuario:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" FontStretch="Normal" FontWeight="Normal" FontStyle="Normal"                                                   />
+        <TextBox x:ConnectionId='3' x:Name="UsuarioTextBox" HorizontalAlignment="Stretch" Margin="0,200,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" PlaceholderText="usuario"/>
+        <TextBlock x:ConnectionId='4' x:Name="PassWordTextBlock" Margin="550,260,550,0" Text="Contraseña:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50"  Width="180" FontSize="30"/>
+        <TextBox x:ConnectionId='5' x:Name="PassWordTextBox" HorizontalAlignment="Stretch" Margin="0,300,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" PlaceholderText="contraseña" />
+        <Button x:ConnectionId='6' x:Name="acceder" Content="Acceder" HorizontalAlignment="Stretch" Margin="550,364,550,0" VerticalAlignment="Top" Height="50" Width="180" FontSize="30"                />
+
+
+    </Grid>
+</Page>
+

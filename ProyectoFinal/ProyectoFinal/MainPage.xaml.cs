@@ -27,9 +27,10 @@ namespace ProyectoFinal
             this.InitializeComponent();
         }
 
-        private void acceder(object sender, RoutedEventArgs e)
+        private void accederLoging(object sender, RoutedEventArgs e)
         {
-            
+            string user = UserTextBlock.Text;
+            Console.WriteLine(user);
         }
     }
 }
