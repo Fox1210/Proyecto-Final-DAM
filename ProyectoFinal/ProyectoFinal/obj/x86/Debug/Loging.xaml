@@ -9,7 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="volverBtn" Content="Button" Height="221" Width="469" HorizontalAlignment="Center" Click="volverBtn_Click"/>
+        <Button x:ConnectionId='2' x:Name="volverBtn" Content="Button" Height="221" Width="469" HorizontalAlignment="Center"                        />
 
     </Grid>
 </Page>
+
