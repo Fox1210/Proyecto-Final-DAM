@@ -1,17 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+
+
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
 
@@ -22,15 +15,30 @@ namespace ProyectoFinal
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private ConnectionBBDD BASE_DATOS = new ConnectionBBDD();
+       
+
         public MainPage()
         {
             this.InitializeComponent();
         }
 
-        private void accederLoging(object sender, RoutedEventArgs e)
+        private async void accederLoging(object sender, RoutedEventArgs e)
         {
-            string user = UserTextBlock.Text;
-            Console.WriteLine(user);
+            if (UserTextBox.Text == String.Empty | UserPasswordBox.Password == String.Empty) 
+            {
+                // MessageBox.Show("Los campos deben estar rellenos"); //PROBLEMA
+                var msg = new MessageDialog("Los campos USUARIO y CONTRASEÑA deben estar rellenos");
+                await msg.ShowAsync();
+            }
+            string lista="resultado: \n";
+            //consulta a la vase de datos
+            List<Usuario> userList = BASE_DATOS.logingUser(UserTextBox.Text,UserPasswordBox.Password);
+            foreach (Usuario user in userList)
+            {  
+                lista += user.IdUser+" "+user.Name+" "+user.Password+" "+user.Type+"\n";
+            }
+            resultado.Text = lista;
         }
     }
 }
