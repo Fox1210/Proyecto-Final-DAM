@@ -44,7 +44,7 @@ namespace ProyectoFinal
             }
                
         }
-        public List<Usuario> logingUser(string username, string password)
+        public Usuario logingUser(string username, string password)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -54,20 +54,19 @@ namespace ProyectoFinal
                 command.CommandText = $"SELECT * FROM `usuario`as us WHERE us.Name='{username}' AND us.Password='{password}'";
                 command.Connection = connection;
 
-                List<Usuario> userList = new List<Usuario>();
+                Usuario user = new Usuario();
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Usuario user = new Usuario();
                         user.IdUser = Convert.ToInt32(reader["IdUser"]);
                         user.Name = reader["name"].ToString();
                         user.Password = reader["Password"].ToString();
                         user.Type = Convert.ToInt32(reader["Type"]);
-                        userList.Add(user);
+
                     }
                 }
-                return userList;
+                return user;
 
             }
 

@@ -27,18 +27,34 @@ namespace ProyectoFinal
         {
             if (UserTextBox.Text == String.Empty | UserPasswordBox.Password == String.Empty) 
             {
-                // MessageBox.Show("Los campos deben estar rellenos"); //PROBLEMA
                 var msg = new MessageDialog("Los campos USUARIO y CONTRASEÑA deben estar rellenos");
                 await msg.ShowAsync();
             }
-            string lista="resultado: \n";
-            //consulta a la vase de datos
-            List<Usuario> userList = BASE_DATOS.logingUser(UserTextBox.Text,UserPasswordBox.Password);
-            foreach (Usuario user in userList)
-            {  
-                lista += user.IdUser+" "+user.Name+" "+user.Password+" "+user.Type+"\n";
+            else {
+                string lista = "resultado: \n";
+                //consulta a la vase de datos
+                Usuario usuario = BASE_DATOS.logingUser(UserTextBox.Text, UserPasswordBox.Password);
+                if (usuario.isEmpty())
+                {
+                    var msg = new MessageDialog("El usuario o la contraseña son invalidos");
+                    await msg.ShowAsync();
+                }
+                else
+                {
+                    App.user = usuario;
+                    //if (usuario.Type == 1)
+                    //{
+                    //    this.Frame.Navigate(typeof(PaginaInicioAdmin));
+                    //}
+                    //else
+                    //{
+                    //    this.Frame.Navigate(typeof(PaginaInicioUser));
+                    //}
+                    //resultado.Text = usuario.ToString();
+                }
+                
             }
-            resultado.Text = lista;
+            
         }
     }
 }

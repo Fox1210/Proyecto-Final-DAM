@@ -24,5 +24,21 @@ namespace ProyectoFinal
         public Usuario()
         {
         }
+
+        public override string ToString()
+        {
+            string result = $"Id User: {IdUser}\nName: {Name}\nPassword: {Password}\nTipo de permiso: {Type}";
+            return result;
+        }
+        public bool isEmpty()
+        {
+            if (IdUser == 0 & Name == String.Empty & Password == String.Empty & Type == 0)
+            {
+                return true;
+            }
+            else { return false; }
+
+        }
+
     }
 }

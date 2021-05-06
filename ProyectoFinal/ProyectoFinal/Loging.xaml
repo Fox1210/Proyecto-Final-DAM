@@ -15,7 +15,7 @@
         <PasswordBox x:Name="UserPasswordBox" HorizontalAlignment="Center" Margin="0,304,0,0" VerticalAlignment="Top" Width="180" Height="50" PlaceholderText="Contraseña" FontSize="30"/>
         <Button x:Name="acceder" Content="Acceder" HorizontalAlignment="Stretch" Margin="550,364,550,0" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" Click="accederLoging"/>
 
-        <TextBlock x:Name="resultado" HorizontalAlignment="Left" Margin="978,178,0,0" Text="resultado: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <!--<TextBlock x:Name="resultado" HorizontalAlignment="Left" Margin="978,178,0,0" Text="resultado: " TextWrapping="Wrap" VerticalAlignment="Top"/>-->
 
     </Grid>
 </Page>

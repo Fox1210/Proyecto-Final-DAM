@@ -63,3 +63,7 @@ C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\obj\x86
 C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\obj\x86\Debug\FxResources.System.Security.Permissions.SR.resw
 C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\obj\x86\Debug\resources.en-us.resfiles
 C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\obj\x86\Debug\resources.en-us.resfiles.intermediate
+C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\obj\x86\Debug\Loging.g.i.cs
+C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\obj\x86\Debug\Loging.g.cs
+C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\obj\x86\Debug\Loging.xaml
+C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\obj\x86\Debug\Loging.xbf

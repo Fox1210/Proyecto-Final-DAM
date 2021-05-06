@@ -22,6 +22,8 @@ namespace ProyectoFinal
     /// </summary>
     sealed partial class App : Application
     {
+        internal static Usuario user;
+
         /// <summary>
         /// Inicializa el objeto de aplicación Singleton. Esta es la primera línea de código creado
         /// ejecutado y, como tal, es el equivalente lógico de main() o WinMain().
