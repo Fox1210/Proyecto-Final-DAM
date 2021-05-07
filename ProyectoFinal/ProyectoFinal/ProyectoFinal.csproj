@@ -119,10 +119,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Loging.xaml.cs">
-      <DependentUpon>Loging.xaml</DependentUpon>
+    <Compile Include="configuracionUser.xaml.cs">
+      <DependentUpon>configuracionUser.xaml</DependentUpon>
     </Compile>
     <Compile Include="ConnectionBBDD.cs" />
+    <Compile Include="PaginaInicioAdmin.xaml.cs">
+      <DependentUpon>PaginaInicioAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaInicioUser.xaml.cs">
+      <DependentUpon>PaginaInicioUser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Usuario.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -149,13 +155,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Loging.xaml">
+    <Page Include="configuracionUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PaginaInicioAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaInicioUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
