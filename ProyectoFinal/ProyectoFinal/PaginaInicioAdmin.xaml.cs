@@ -20,16 +20,11 @@ namespace ProyectoFinal
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class Loging : Page
+    public sealed partial class PaginaInicioAdmin : Page
     {
-        public Loging()
+        public PaginaInicioAdmin()
         {
             this.InitializeComponent();
-        }
-
-        private void volverBtn_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }
