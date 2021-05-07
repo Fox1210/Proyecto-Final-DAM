@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-06T16:44:40.865</Modified>
+      <Modified>2021-05-07T15:28:49.578</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ProyectoFinal.exe">
       <PackagePath>entrypoint\ProyectoFinal.exe</PackagePath>
-      <Modified>2021-05-06T16:44:39.939</Modified>
+      <Modified>2021-05-07T15:28:48.685</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\bouncycastle.netcore\1.8.5\lib\netstandard2.0\BouncyCastle.Crypto.dll">
       <PackagePath>BouncyCastle.Crypto.dll</PackagePath>
@@ -134,19 +134,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ProyectoFinal.xr.xml">
       <PackagePath>ProyectoFinal.xr.xml</PackagePath>
-      <Modified>2021-05-06T16:37:42.153</Modified>
+      <Modified>2021-05-07T15:16:40.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-05-06T16:44:26.695</Modified>
+      <Modified>2021-05-07T15:28:17.864</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\Loging.xbf">
-      <PackagePath>Loging.xbf</PackagePath>
-      <Modified>2021-05-06T16:44:26.695</Modified>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\configuracionUser.xbf">
+      <PackagePath>configuracionUser.xbf</PackagePath>
+      <Modified>2021-05-07T15:28:17.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-05-06T16:44:26.695</Modified>
+      <Modified>2021-05-07T15:28:17.865</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\PaginaInicioAdmin.xbf">
+      <PackagePath>PaginaInicioAdmin.xbf</PackagePath>
+      <Modified>2021-05-07T15:28:17.865</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\PaginaInicioUser.xbf">
+      <PackagePath>PaginaInicioUser.xbf</PackagePath>
+      <Modified>2021-05-07T15:28:17.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -154,11 +162,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-05-06T16:44:40.194</Modified>
+      <Modified>2021-05-07T14:52:00.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\Core\ProyectoFinal.exe">
       <PackagePath>ProyectoFinal.exe</PackagePath>
-      <Modified>2021-05-06T16:44:40.857</Modified>
+      <Modified>2021-05-07T15:28:49.571</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

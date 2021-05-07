@@ -6,8 +6,10 @@ Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
-Loging.xbf
+configuracionUser.xbf
 MainPage.xbf
+PaginaInicioAdmin.xbf
+PaginaInicioUser.xbf
 ProyectoFinal.xr.xml
 Properties\Default.rd.xml
 WinMetadata\Windows.winmd

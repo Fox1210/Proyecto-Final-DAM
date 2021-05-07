@@ -8,16 +8,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Button Content="Volver" Margin="220,539,810,131" VerticalAlignment="Stretch" FontSize="30" HorizontalAlignment="Stretch"/>
-        <Button Content="Actualizar" Margin="810,539,220,131" VerticalAlignment="Stretch" FontSize="30" HorizontalAlignment="Stretch"/>
-        <TextBlock x:Name="textBlockUserName" Margin="270,225,720,455" Text="Nombre del usuario:" TextWrapping="Wrap" FontSize="30" Height="40"/>
-        <TextBox x:Name="UserNameTextBox" HorizontalAlignment="Left" Margin="719,221,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="250" FontSize="30"/>
-        <TextBlock x:Name="textBlockUserName" Margin="270,225,720,455" Text="Contraseña del usuario:" TextWrapping="Wrap" FontSize="30" Height="40"/>
-        <TextBox x:Name="UserNameTextBox" HorizontalAlignment="Left" Margin="719,221,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="250" FontSize="30"/>
-        <TextBox x:Name="UserNameTextBox" HorizontalAlignment="Left" Margin="719,221,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="250" FontSize="30"/>
-        <TextBlock x:Name="textBlockUserName" Margin="270,225,720,455" Text="Tipo del usuario: " TextWrapping="Wrap" FontSize="30" Height="40"/>
-        
+    <Grid Margin="0,8,0,-8">
+        <Button x:Name="volver" Content="Volver" Margin="220,539,0,0" VerticalAlignment="Top" FontSize="30" Click="volver_Click" Width="250" Height="50"/>
+        <Button x:Name="actualizar" Content="Actualizar" Margin="810,539,0,0" VerticalAlignment="Top" FontSize="30" Width="250" Height="50"/>
+        <TextBlock x:Name="textBlockUserName" Margin="245,225,0,0" Text="Nombre del usuario:" TextWrapping="Wrap" FontSize="30" Height="40" Width="310" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="UserNameTextBox" Margin="600,225,0,0" Text="TextBox" TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Left" Width="247" Height="50" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockUserPassword" Margin="240,308,0,0" Text="Contraseña del usuario:" TextWrapping="Wrap" FontSize="30" Height="40" Width="350" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="UserPasswordTextBox" Margin="600,308,433,362" Text="TextBox" TextWrapping="Wrap" FontSize="30"/>
+        <TextBox x:Name="UserPassword2TextBox" Margin="890,308,0,0" Text="TextBox" TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Left" Width="250" Height="50" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockUserType" Margin="240,393,0,0" Text="Tipo del usuario: " TextWrapping="Wrap" FontSize="30" Height="40" Width="310" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TypeUser" Margin="600,393,0,0" Text="TextBlock" TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Left" Width="247" Height="45" VerticalAlignment="Top"/>
 
 
     </Grid>

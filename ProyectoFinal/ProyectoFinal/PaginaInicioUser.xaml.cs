@@ -27,7 +27,9 @@ namespace ProyectoFinal
             this.InitializeComponent();
         }
 
-        private void opcionUsuario_Click(object sender, RoutedEventArgs e)
+        
+
+        private void configuracion_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(configuracionUser));
         }

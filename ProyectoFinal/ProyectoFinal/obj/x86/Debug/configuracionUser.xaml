@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="ProyectoFinal.configuracionUser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProyectoFinal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="0,8,0,-8">
+        <Button x:ConnectionId='2' x:Name="volver" Content="Volver" Margin="220,539,0,0" VerticalAlignment="Top" FontSize="30"                      Width="250" Height="50"/>
+        <Button x:ConnectionId='3' x:Name="actualizar" Content="Actualizar" Margin="810,539,0,0" VerticalAlignment="Top" FontSize="30" Width="250" Height="50"/>
+        <TextBlock x:ConnectionId='4' x:Name="textBlockUserName" Margin="245,225,0,0" Text="Nombre del usuario:" TextWrapping="Wrap" FontSize="30" Height="40" Width="310" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:ConnectionId='5' x:Name="UserNameTextBox" Margin="600,225,0,0" Text="TextBox" TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Left" Width="247" Height="50" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='6' x:Name="textBlockUserPassword" Margin="240,308,0,0" Text="Contraseña del usuario:" TextWrapping="Wrap" FontSize="30" Height="40" Width="350" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:ConnectionId='7' x:Name="UserPasswordTextBox" Margin="600,308,433,362" Text="TextBox" TextWrapping="Wrap" FontSize="30"/>
+        <TextBox x:ConnectionId='8' x:Name="UserPassword2TextBox" Margin="890,308,0,0" Text="TextBox" TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Left" Width="250" Height="50" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='9' x:Name="textBlockUserType" Margin="240,393,0,0" Text="Tipo del usuario: " TextWrapping="Wrap" FontSize="30" Height="40" Width="310" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='10' x:Name="TypeUser" Margin="600,393,0,0" Text="TextBlock" TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Left" Width="247" Height="45" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Page>
+

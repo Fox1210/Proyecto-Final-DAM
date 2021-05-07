@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="ProyectoFinal.Loging"
+    x:Class="ProyectoFinal.PaginaInicioAdmin"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ProyectoFinal"
@@ -9,7 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:ConnectionId='2' x:Name="volverBtn" Content="Button" Height="221" Width="469" HorizontalAlignment="Center"                        />
 
     </Grid>
 </Page>

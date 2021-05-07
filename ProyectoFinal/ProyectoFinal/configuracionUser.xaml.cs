@@ -27,6 +27,9 @@ namespace ProyectoFinal
             this.InitializeComponent();
         }
 
-     
+        private void volver_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PaginaInicioUser));
+        }
     }
 }
