@@ -22,7 +22,7 @@ namespace ProyectoFinal
     /// </summary>
     sealed partial class App : Application
     {
-        internal static Usuario user;
+        internal static Usuario user=new Usuario();
 
         /// <summary>
         /// Inicializa el objeto de aplicación Singleton. Esta es la primera línea de código creado

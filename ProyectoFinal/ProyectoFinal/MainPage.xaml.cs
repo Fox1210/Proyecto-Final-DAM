@@ -44,6 +44,7 @@ namespace ProyectoFinal
                 }
                 else
                 {
+                    //resultado.Text = usuario.ToString();
                     App.user = usuario;
                     if (usuario.Type == 1)
                     {
@@ -53,7 +54,7 @@ namespace ProyectoFinal
                     {
                         this.Frame.Navigate(typeof(PaginaInicioUser));
                     }
-                    
+
                 }
                 
             }

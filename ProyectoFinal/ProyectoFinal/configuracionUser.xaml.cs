@@ -29,7 +29,7 @@ namespace ProyectoFinal
             UserNameTextBox.Text = usuario.Name;
             UserPassword.Password = usuario.Password;
             UserPassword2.Password = usuario.Password;
-            UserTypeTextBlock.Text = usuario.WhatType();
+            UserTypeTextBlock.Text = usuario.whatType();
 
         }
 

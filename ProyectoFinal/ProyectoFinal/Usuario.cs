@@ -32,7 +32,7 @@ namespace ProyectoFinal
         }
         public bool isEmpty()
         {
-            if (IdUser == 0 & Name == String.Empty & Password == String.Empty & Type == 0)
+            if (IdUser == 0 | Name == String.Empty | Password == String.Empty | Type == 0)
             {
                 return true;
             }

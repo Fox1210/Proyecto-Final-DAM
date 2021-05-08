@@ -45,18 +45,17 @@
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="PlaceholderText" />
-      <RootEvent Name="TextChanged" />
     </RootType>
-    <RootType FullName="ProyectoFinal.configuracionUser" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
       <RootProperty Name="Height" />
-      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Width" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="PlaceholderText" />
     </RootType>
+    <RootType FullName="ProyectoFinal.configuracionUser" />
     <RootType FullName="ProyectoFinal.MainPage" />
     <RootType FullName="ProyectoFinal.PaginaInicioAdmin" />
     <RootType FullName="ProyectoFinal.PaginaInicioUser" />
