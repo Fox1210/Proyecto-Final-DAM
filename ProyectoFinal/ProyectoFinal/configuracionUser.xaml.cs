@@ -22,14 +22,22 @@ namespace ProyectoFinal
     /// </summary>
     public sealed partial class configuracionUser : Page
     {
+        private Usuario usuario = App.user;
         public configuracionUser()
         {
             this.InitializeComponent();
+            UserNameTextBox.Text = usuario.Name;
+            UserPassword.Password = usuario.Password;
+            UserPassword2.Password = usuario.Password;
+            UserTypeTextBlock.Text = usuario.WhatType();
+
         }
 
         private void volver_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PaginaInicioUser));
         }
+
+       
     }
 }

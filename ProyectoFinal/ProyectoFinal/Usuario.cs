@@ -40,5 +40,21 @@ namespace ProyectoFinal
 
         }
 
+        public string whatType()
+        {
+            string result = "";
+            switch (Type)
+            {
+                case 1:
+                    result= "Administrador";
+                    break;
+                case 2:
+                    result= "Usuario";
+                    break;
+            }
+            return result;
+            
+        }
+            
     }
 }

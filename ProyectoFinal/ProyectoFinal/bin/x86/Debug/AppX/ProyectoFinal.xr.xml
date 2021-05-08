@@ -16,9 +16,9 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
@@ -28,6 +28,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontStretch" />
       <RootProperty Name="FontWeight" />
@@ -39,11 +40,12 @@
       <RootProperty Name="Text" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="PlaceholderText" />
+      <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="ProyectoFinal.configuracionUser" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">

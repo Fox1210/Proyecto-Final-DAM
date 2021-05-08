@@ -45,6 +45,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="PlaceholderText" />
+      <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="ProyectoFinal.configuracionUser" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
