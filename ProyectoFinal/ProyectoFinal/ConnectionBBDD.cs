@@ -13,7 +13,7 @@ namespace ProyectoFinal
 
         public ConnectionBBDD()
         {
-           
+
         }
 
         public List<Usuario> allUser()
@@ -29,21 +29,21 @@ namespace ProyectoFinal
                 List<Usuario> userList = new List<Usuario>();
                 using (var reader = command.ExecuteReader())
                 {
-                    while (reader.Read()) 
+                    while (reader.Read())
                     {
                         Usuario user = new Usuario();
-                        user.IdUser=Convert.ToInt32(reader["IdUser"]);
+                        user.IdUser = Convert.ToInt32(reader["IdUser"]);
                         user.Name = reader["name"].ToString();
                         user.Password = reader["Password"].ToString();
-                        user.Type= Convert.ToInt32(reader["Type"]);
+                        user.Type = Convert.ToInt32(reader["Type"]);
                         userList.Add(user);
                     }
                 }
                 return userList;
 
             }
-               
-        }
+
+        }// Fin allUser
         public Usuario logingUser(string username, string password)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -63,13 +63,34 @@ namespace ProyectoFinal
                         user.Name = reader["name"].ToString();
                         user.Password = reader["Password"].ToString();
                         user.Type = Convert.ToInt32(reader["Type"]);
-
                     }
                 }
                 return user;
 
             }
 
-        }
-    }
+        }//Fin logingUser
+        public int updatePassword(Usuario usuario, string password)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                //Codigo para un Select 
+                connection.Open();//abre la conexion con la bbdd
+                MySqlCommand command = new MySqlCommand();
+                command.CommandText = $"UPDATE `usuario` SET `Password`='{password}' WHERE `IdUser`={usuario.IdUser};";
+                command.Connection = connection;
+
+                int reader = command.ExecuteNonQuery();
+
+                return reader;
+
+
+
+
+
+            }
+        }//Fin updatePassword
+
+
+    }//Fin clase
 }

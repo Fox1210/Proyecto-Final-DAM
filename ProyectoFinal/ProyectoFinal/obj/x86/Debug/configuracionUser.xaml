@@ -10,9 +10,9 @@
 
     <Grid Margin="0,8,0,-8">
         <Button x:ConnectionId='2' x:Name="volver" Content="Volver" Margin="220,539,0,0" VerticalAlignment="Top" FontSize="30"                      Width="250" Height="50"/>
-        <Button x:ConnectionId='3' x:Name="actualizar" Content="Actualizar" Margin="810,539,0,0" VerticalAlignment="Top" FontSize="30" Width="250" Height="50"/>
+        <Button x:ConnectionId='3' x:Name="actualizar" Content="Actualizar" Margin="810,539,0,0" VerticalAlignment="Top" FontSize="30" Width="250" Height="50"                         />
         <TextBlock x:ConnectionId='4' x:Name="textBlockUserName" Margin="245,225,0,0" Text="Nombre del usuario:" TextWrapping="Wrap" FontSize="30" Height="40" Width="310" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox x:ConnectionId='5' x:Name="UserNameTextBox" Margin="600,225,0,0" Text="TextBox" TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Left" Width="247" Height="50" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='5' x:Name="UserNameTextBlock" Margin="600,225,0,0" Text="TextBox" TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Left" Width="247" Height="50" VerticalAlignment="Top"/>
         <TextBlock x:ConnectionId='6' x:Name="textBlockUserPassword" Margin="240,308,0,0" Text="Contraseña del usuario:" TextWrapping="Wrap" FontSize="30" Height="40" Width="350" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
         <PasswordBox x:ConnectionId='7' x:Name="UserPassword" HorizontalAlignment="Left" Margin="600,308,0,0" VerticalAlignment="Top" Height="50" Width="250" FontSize="30" PlaceholderText="Contraseña"/>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -23,10 +24,11 @@ namespace ProyectoFinal
     public sealed partial class configuracionUser : Page
     {
         private Usuario usuario = App.user;
+        private ConnectionBBDD ConnectionBBDD = App.bbdd;
         public configuracionUser()
         {
             this.InitializeComponent();
-            UserNameTextBox.Text = usuario.Name;
+            UserNameTextBlock.Text = usuario.Name;
             UserPassword.Password = usuario.Password;
             UserPassword2.Password = usuario.Password;
             UserTypeTextBlock.Text = usuario.whatType();
@@ -38,6 +40,24 @@ namespace ProyectoFinal
             this.Frame.Navigate(typeof(PaginaInicioUser));
         }
 
-       
+        private async void actualizar_Click(object sender, RoutedEventArgs e)
+        {
+            if (UserPassword.Password == UserPassword2.Password)
+            {
+                int result = ConnectionBBDD.updatePassword(usuario, UserPassword.Password);
+                if (result != 0)
+                {
+                    //muestra un mensaje de usuario o contraseña erroneos
+                    var msg = new MessageDialog("La contraseña ha sido modificada");
+                    await msg.ShowAsync();
+                }
+            }
+            else
+            {
+                //muestra un mensaje de usuario o contraseña erroneos
+                var msg = new MessageDialog("No se pude actualizar los campos contrasña no son iguales");
+                await msg.ShowAsync();
+            }
+        }
     }
 }

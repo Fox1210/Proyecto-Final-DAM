@@ -15,8 +15,8 @@ namespace ProyectoFinal
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private ConnectionBBDD BASE_DATOS = new ConnectionBBDD();
-       
+        private ConnectionBBDD BASE_DATOS = App.bbdd;
+
 
         public MainPage()
         {
@@ -25,14 +25,15 @@ namespace ProyectoFinal
 
         private async void accederLoging(object sender, RoutedEventArgs e)
         {
-            if (UserTextBox.Text == String.Empty | UserPasswordBox.Password == String.Empty) 
+            if (UserTextBox.Text == String.Empty | UserPasswordBox.Password == String.Empty)
             {
                 //muestra mensaje sobre los campos requeridos
                 var msg = new MessageDialog("Los campos USUARIO y CONTRASEÑA deben estar rellenos");
                 await msg.ShowAsync();
             }
-            else {
-                
+            else
+            {
+
                 //consulta a la vase de datos
                 Usuario usuario = BASE_DATOS.logingUser(UserTextBox.Text, UserPasswordBox.Password);
 
@@ -56,9 +57,10 @@ namespace ProyectoFinal
                     }
 
                 }
-                
+
             }
-            
-        }
-    }
+
+        }// Fin accederLoging
+
+    }// Fin class
 }
