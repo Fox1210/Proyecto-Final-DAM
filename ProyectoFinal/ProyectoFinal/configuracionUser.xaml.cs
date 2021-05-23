@@ -30,12 +30,8 @@ namespace ProyectoFinal
             this.InitializeComponent();
             UserNameTextBlock.Text = usuario.Name;
 
-            UserPassword.Password = usuario.Password;
-            UserPassword.PasswordRevealMode = PasswordRevealMode.Peek;
-
-            UserPassword2.Password = usuario.Password;
-            UserPassword2.PasswordRevealMode = PasswordRevealMode.Peek;
-
+            UserPassword.Text = usuario.Password;
+            
             UserTypeTextBlock.Text = usuario.whatType();
 
         }
@@ -45,24 +41,11 @@ namespace ProyectoFinal
             this.Frame.Navigate(typeof(PaginaInicioUser));
         }
 
-        private async void actualizar_Click(object sender, RoutedEventArgs e)
+ 
+
+        private void modificarPassword_click(object sender, RoutedEventArgs e)
         {
-            if (UserPassword.Password == UserPassword2.Password)
-            {
-                int result = ConnectionBBDD.updatePassword(usuario, UserPassword.Password);
-                if (result != 0)
-                {
-                    //muestra un mensaje de usuario o contraseña erroneos
-                    var msg = new MessageDialog("La contraseña ha sido modificada");
-                    await msg.ShowAsync();
-                }
-            }
-            else
-            {
-                //muestra un mensaje de usuario o contraseña erroneos
-                var msg = new MessageDialog("No se pude actualizar los campos contrasña no son iguales");
-                await msg.ShowAsync();
-            }
+            this.Frame.Navigate(typeof(ModificarPassword));
         }
     }
 }
