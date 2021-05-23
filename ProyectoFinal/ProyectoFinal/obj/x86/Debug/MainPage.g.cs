@@ -8,6 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System;
+using Windows.UI.Xaml;
+
 namespace ProyectoFinal
 {
     partial class MainPage : 
@@ -55,6 +58,11 @@ namespace ProyectoFinal
                 break;
             }
             this._contentLoaded = true;
+        }
+
+        private void UserTextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
