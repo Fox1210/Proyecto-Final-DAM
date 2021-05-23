@@ -11,8 +11,10 @@
     <Grid>
         <TextBlock x:ConnectionId='2' x:Name="UserTextBlock" Margin="550,158,550,0" Text="Usuario:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" FontStretch="Normal" FontWeight="Normal" FontStyle="Normal"                                                   />
         <TextBox x:ConnectionId='3' x:Name="UserTextBox" HorizontalAlignment="Stretch" Margin="0,200,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="180" FontSize="30" PlaceholderText="usuario"/>
+       
         <TextBlock x:ConnectionId='4' x:Name="PassWordTextBlock" Margin="550,264,550,0" Text="Contraseña:" TextWrapping="Wrap" VerticalAlignment="Top" Height="50"  Width="180" FontSize="30"/>
         <PasswordBox x:ConnectionId='5' x:Name="UserPasswordBox" HorizontalAlignment="Center" Margin="0,304,0,0" VerticalAlignment="Top" Width="180" Height="50" PlaceholderText="Contraseña" FontSize="30"/>
+        
         <Button x:ConnectionId='6' x:Name="acceder" Content="Acceder" HorizontalAlignment="Stretch" Margin="550,364,550,0" VerticalAlignment="Top" Height="50" Width="180" FontSize="30"                      />
 
         <!--<TextBlock x:Name="resultado" HorizontalAlignment="Left" Margin="978,178,0,0" Text="resultado: " TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="resultado_SelectionChanged"/>-->
