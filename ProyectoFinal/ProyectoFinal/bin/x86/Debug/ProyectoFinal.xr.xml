@@ -43,6 +43,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="IsPasswordRevealButtonEnabled" />
     </RootType>
     <RootType FullName="ProyectoFinal.configuracionUser" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">

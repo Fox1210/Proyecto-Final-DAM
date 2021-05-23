@@ -16,7 +16,7 @@
         <TextBlock x:Name="textBlockUserPassword" Margin="240,308,0,0" Text="Contraseña del usuario:" TextWrapping="Wrap" FontSize="30" Height="40" Width="350" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
         <PasswordBox x:Name="UserPassword" HorizontalAlignment="Left" Margin="600,308,0,0" VerticalAlignment="Top" Height="50" Width="250" FontSize="30" PlaceholderText="Contraseña"/>
-        <PasswordBox x:Name="UserPassword2" HorizontalAlignment="Left" Margin="900,308,0,0" VerticalAlignment="Top" Height="50" Width="250" FontSize="30" PlaceholderText="Verifica Contraseña"/>
+        <PasswordBox x:Name="UserPassword2" HorizontalAlignment="Left" Margin="900,308,0,0" VerticalAlignment="Top" Height="50" Width="250" FontSize="30" PlaceholderText="Verifica Contraseña" IsPasswordRevealButtonEnabled="True"/>
 
         <TextBlock x:Name="textBlockUserType" Margin="240,393,0,0" Text="Tipo del usuario: " TextWrapping="Wrap" FontSize="30" Height="40" Width="310" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBlock x:Name="UserTypeTextBlock" Margin="600,393,0,0" Text="TextBlock" TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Left" Width="247" Height="45" VerticalAlignment="Top"/>

@@ -29,8 +29,13 @@ namespace ProyectoFinal
         {
             this.InitializeComponent();
             UserNameTextBlock.Text = usuario.Name;
+
             UserPassword.Password = usuario.Password;
+            UserPassword.PasswordRevealMode = PasswordRevealMode.Peek;
+
             UserPassword2.Password = usuario.Password;
+            UserPassword2.PasswordRevealMode = PasswordRevealMode.Peek;
+
             UserTypeTextBlock.Text = usuario.whatType();
 
         }
