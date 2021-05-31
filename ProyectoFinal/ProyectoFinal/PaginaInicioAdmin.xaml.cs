@@ -26,5 +26,14 @@ namespace ProyectoFinal
         {
             this.InitializeComponent();
         }
+        private void configuracion_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(configuracionUser));
+        }
+
+        private void logOut_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
     }
 }

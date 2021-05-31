@@ -9,6 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Button x:Name="JavaOption" Content="Java" Margin="200,200,0,0" VerticalAlignment="Top" FontSize="30" Width="200"/>
+        <Button x:Name="SqlOption_Copy" Content="SQL" Margin="450,200,0,0" VerticalAlignment="Top" FontSize="30" Width="200"/>
+        <Button x:Name="configuracion" Content="Configuración" Margin="966,75,0,0" VerticalAlignment="Top" FontSize="30" Width="250" Click="configuracion_Click"/>
+        <Button x:Name="LogOutBtn" Content="Log Out" Margin="184,75,0,0" VerticalAlignment="Top" FontSize="30" Width="250" Click="logOut_Click"/>
     </Grid>
 </Page>
