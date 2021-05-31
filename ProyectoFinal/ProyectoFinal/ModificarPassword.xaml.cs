@@ -40,29 +40,37 @@ namespace ProyectoFinal
             //Validamos que las password actual es correcta
             if (usuario.Password.Equals(OldPasswordBox.Password))
             {
-                //Valida que se la nueva password
-                if (NewPasswordBox.Password == New2PasswordBox.Password)
-                {
-
-                    int result = ConnectionBBDD.updatePassword(usuario, NewPasswordBox.Password);
-                    if (result != 0)
+                if (NewPasswordBox.Password != String.Empty && New2PasswordBox.Password != String.Empty)
+                { 
+                    //Valida que se la nueva password
+                    if (NewPasswordBox.Password == New2PasswordBox.Password)
                     {
-                        //muestra un mensaje de usuario o contraseña erroneos
-                        mensaje("La contraseña ha sido modificada");
 
-                        //modificamos el usuario en eso Actual
-                        App.user.Password = NewPasswordBox.Password;
+                        int result = ConnectionBBDD.updatePassword(usuario, NewPasswordBox.Password);
+                        if (result != 0)
+                        {
+                            //muestra un mensaje de usuario o contraseña erroneos
+                            mensaje("La contraseña ha sido modificada");
 
+                            //modificamos el usuario en eso Actual
+                            App.user.Password = NewPasswordBox.Password;
+
+                        }
+                        else
+                        {
+                            mensaje("Se produjo un error al modificar la Base de Datos");
+                        }
                     }
                     else
                     {
-                        mensaje("Se produjo un error al modificar la Base de Datos");
+                        mensaje("Error en la nueva contraseña o en la confirmación");
                     }
                 }
                 else
                 {
-                    mensaje("Error en la nueva contraseña o en la confirmación");
+                    mensaje("La nueva contraseña o la confirmacion no se han rellenado");
                 }
+
 
             }
             else

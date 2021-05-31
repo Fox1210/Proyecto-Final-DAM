@@ -120,12 +120,15 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="configuracionUser.xaml.cs">
-      <DependentUpon>configuracionUser.xaml</DependentUpon>
+    <Compile Include="configuracion.xaml.cs">
+      <DependentUpon>configuracion.xaml</DependentUpon>
     </Compile>
     <Compile Include="ConnectionBBDD.cs" />
     <Compile Include="ModificarPassword.xaml.cs">
       <DependentUpon>ModificarPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoUsuario.xaml.cs">
+      <DependentUpon>NuevoUsuario.xaml</DependentUpon>
     </Compile>
     <Compile Include="PaginaInicioAdmin.xaml.cs">
       <DependentUpon>PaginaInicioAdmin.xaml</DependentUpon>
@@ -159,7 +162,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="configuracionUser.xaml">
+    <Page Include="configuracion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -168,6 +171,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ModificarPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NuevoUsuario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

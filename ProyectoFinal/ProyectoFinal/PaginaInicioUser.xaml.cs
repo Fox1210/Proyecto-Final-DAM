@@ -31,7 +31,7 @@ namespace ProyectoFinal
 
         private void configuracion_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(configuracionUser));
+            this.Frame.Navigate(typeof(configuracion));
         }
 
         private void logOut_Click(object sender, RoutedEventArgs e)

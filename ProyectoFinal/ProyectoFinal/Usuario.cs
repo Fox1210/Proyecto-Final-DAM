@@ -8,6 +8,8 @@ namespace ProyectoFinal
 {
     class Usuario
     {
+        internal readonly bool isAdmin;
+
         public int IdUser { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
@@ -39,22 +41,44 @@ namespace ProyectoFinal
             else { return false; }
 
         }
+        public bool IsUser()
+        {
+            if (this.Type == 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool IsAdmin()
+        {
+            if (this.Type == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
-        public string whatType()
+        public string WhatType()
         {
             string result = "";
             switch (Type)
             {
                 case 1:
-                    result= "Administrador";
+                    result = "Administrador";
                     break;
                 case 2:
-                    result= "Usuario";
+                    result = "Usuario";
                     break;
             }
             return result;
-            
+
         }
-            
+
     }
 }

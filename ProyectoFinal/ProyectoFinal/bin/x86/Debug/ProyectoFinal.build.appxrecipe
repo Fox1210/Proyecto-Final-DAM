@@ -112,6 +112,12 @@
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ModificarPassword.xbf">
+      <PackagePath>ModificarPassword.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\NuevoUsuario.xbf">
+      <PackagePath>NuevoUsuario.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\PaginaInicioAdmin.xbf">
       <PackagePath>PaginaInicioAdmin.xbf</PackagePath>
     </AppxPackagedFile>

@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -21,31 +20,16 @@ namespace ProyectoFinal
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class configuracionUser : Page
+    public sealed partial class NuevoUsuario : Page
     {
-        private Usuario usuario = App.user;
-        private ConnectionBBDD ConnectionBBDD = App.bbdd;
-        public configuracionUser()
+        public NuevoUsuario()
         {
             this.InitializeComponent();
-            UserNameTextBlock.Text = usuario.Name;
-
-            UserPassword.Text = usuario.Password;
-            
-            UserTypeTextBlock.Text = usuario.whatType();
-
         }
 
         private void volver_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PaginaInicioUser));
-        }
-
- 
-
-        private void modificarPassword_click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(ModificarPassword));
+            this.Frame.Navigate(typeof(PaginaInicioAdmin));
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -20,25 +21,39 @@ namespace ProyectoFinal
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class PaginaInicioAdmin : Page
+    public sealed partial class configuracion : Page
     {
-        public PaginaInicioAdmin()
+        private Usuario usuario = App.user;
+        private ConnectionBBDD ConnectionBBDD = App.bbdd;
+        public configuracion()
         {
             this.InitializeComponent();
-        }
-        private void configuracion_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(configuracion));
+            UserNameTextBlock.Text = usuario.Name;
+
+            UserPassword.Text = usuario.Password;
+
+            UserTypeTextBlock.Text = usuario.WhatType();
+
         }
 
-        private void logOut_Click(object sender, RoutedEventArgs e)
+        private void volver_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            if (usuario.IsUser())
+            {
+                this.Frame.Navigate(typeof(PaginaInicioUser));
+            }
+            if(usuario.IsAdmin())
+            {
+                this.Frame.Navigate(typeof(PaginaInicioAdmin));
+            }
+
         }
 
-        private void newUser_Click(object sender, RoutedEventArgs e)
+
+
+        private void modificarPassword_click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(NuevoUsuario));
+            this.Frame.Navigate(typeof(ModificarPassword));
         }
     }
 }

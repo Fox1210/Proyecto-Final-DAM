@@ -60,6 +60,7 @@
     </RootType>
     <RootType FullName="ProyectoFinal.MainPage" />
     <RootType FullName="ProyectoFinal.ModificarPassword" />
+    <RootType FullName="ProyectoFinal.NuevoUsuario" />
     <RootType FullName="ProyectoFinal.PaginaInicioAdmin" />
     <RootType FullName="ProyectoFinal.PaginaInicioUser" />
   </Roots.RootTypes>
