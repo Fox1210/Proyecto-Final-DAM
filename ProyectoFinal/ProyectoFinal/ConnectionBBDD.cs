@@ -94,11 +94,18 @@ namespace ProyectoFinal
                 //Codigo para un Select 
                 connection.Open();//abre la conexion con la bbdd
                 MySqlCommand command = new MySqlCommand();
-                command.CommandText = $"INSERT INTO `usuario`(`IdUser`, `Name`, `Password`, `Type`) VALUES (null,{usuario.Name},{usuario.Password},{usuario.Type});";
+                command.CommandText = $"INSERT INTO `usuario`(`IdUser`, `Name`, `Password`, `Type`) VALUES (null,'{usuario.Name}','{usuario.Password}','{usuario.Type}');";
                 command.Connection = connection;
+                try
+                {
+                    command.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
 
-                int reader = command.ExecuteNonQuery();
-                if (reader != 0) { return true;} else { return false; }
 
             }
         }//Fin insertNewUser

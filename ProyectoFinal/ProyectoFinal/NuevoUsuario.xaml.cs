@@ -26,6 +26,8 @@ namespace ProyectoFinal
         public NuevoUsuario()
         {
             this.InitializeComponent();
+            NewUserTypeComboBox.Items.Add("Usuario");
+            NewUserTypeComboBox.Items.Add("Administrador");
 
         }
 

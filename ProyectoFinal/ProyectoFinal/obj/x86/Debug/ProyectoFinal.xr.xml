@@ -65,10 +65,6 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Items" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
-      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="ProyectoFinal.NuevoUsuario" />
     <RootType FullName="ProyectoFinal.PaginaInicioAdmin" />

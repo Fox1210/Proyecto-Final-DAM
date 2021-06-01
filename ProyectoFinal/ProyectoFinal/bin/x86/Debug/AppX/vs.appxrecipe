@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-06-01T13:02:18.772</Modified>
+      <Modified>2021-06-01T16:34:48.075</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ProyectoFinal.exe">
       <PackagePath>entrypoint\ProyectoFinal.exe</PackagePath>
-      <Modified>2021-06-01T13:02:18.050</Modified>
+      <Modified>2021-06-01T16:34:47.231</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\bouncycastle.netcore\1.8.5\lib\netstandard2.0\BouncyCastle.Crypto.dll">
       <PackagePath>BouncyCastle.Crypto.dll</PackagePath>
@@ -134,35 +134,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ProyectoFinal.xr.xml">
       <PackagePath>ProyectoFinal.xr.xml</PackagePath>
-      <Modified>2021-06-01T13:02:17.764</Modified>
+      <Modified>2021-06-01T16:10:40.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-06-01T12:56:13.147</Modified>
+      <Modified>2021-06-01T16:28:45.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\configuracion.xbf">
       <PackagePath>configuracion.xbf</PackagePath>
-      <Modified>2021-06-01T12:56:13.147</Modified>
+      <Modified>2021-06-01T16:28:45.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-06-01T12:56:13.148</Modified>
+      <Modified>2021-06-01T16:28:45.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ModificarPassword.xbf">
       <PackagePath>ModificarPassword.xbf</PackagePath>
-      <Modified>2021-06-01T12:56:13.148</Modified>
+      <Modified>2021-06-01T16:28:45.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\NuevoUsuario.xbf">
       <PackagePath>NuevoUsuario.xbf</PackagePath>
-      <Modified>2021-06-01T13:02:17.772</Modified>
+      <Modified>2021-06-01T16:28:45.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\PaginaInicioAdmin.xbf">
       <PackagePath>PaginaInicioAdmin.xbf</PackagePath>
-      <Modified>2021-06-01T12:56:13.148</Modified>
+      <Modified>2021-06-01T16:28:45.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\PaginaInicioUser.xbf">
       <PackagePath>PaginaInicioUser.xbf</PackagePath>
-      <Modified>2021-06-01T12:56:13.149</Modified>
+      <Modified>2021-06-01T16:28:45.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -174,7 +174,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\Core\ProyectoFinal.exe">
       <PackagePath>ProyectoFinal.exe</PackagePath>
-      <Modified>2021-06-01T13:02:18.764</Modified>
+      <Modified>2021-06-01T16:34:48.068</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
