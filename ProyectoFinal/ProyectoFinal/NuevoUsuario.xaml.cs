@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,11 +26,19 @@ namespace ProyectoFinal
         public NuevoUsuario()
         {
             this.InitializeComponent();
+            
         }
 
         private void volver_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PaginaInicioAdmin));
         }
-    }
+
+        private async void mensaje(String mensaje)
+        {
+            //muestra un mensaje de usuario o contraseña erroneos
+            var msg = new MessageDialog(mensaje);
+            await msg.ShowAsync();
+        }//Fin mensaje
+    }// Fin class
 }

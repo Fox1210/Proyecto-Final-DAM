@@ -32,17 +32,17 @@ namespace ProyectoFinal
 
             UserPassword.Text = usuario.Password;
 
-            UserTypeTextBlock.Text = usuario.WhatType();
+            UserTypeTextBlock.Text = usuario.whatType();
 
         }
 
         private void volver_Click(object sender, RoutedEventArgs e)
         {
-            if (usuario.IsUser())
+            if (usuario.isUser())
             {
                 this.Frame.Navigate(typeof(PaginaInicioUser));
             }
-            if(usuario.IsAdmin())
+            if(usuario.isAdmin())
             {
                 this.Frame.Navigate(typeof(PaginaInicioAdmin));
             }

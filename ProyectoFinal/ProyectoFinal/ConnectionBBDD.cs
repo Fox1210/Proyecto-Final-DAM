@@ -84,12 +84,24 @@ namespace ProyectoFinal
 
                 return reader;
 
-
-
-
-
             }
         }//Fin updatePassword
+
+        public bool insertNewUser(Usuario usuario)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                //Codigo para un Select 
+                connection.Open();//abre la conexion con la bbdd
+                MySqlCommand command = new MySqlCommand();
+                command.CommandText = $"INSERT INTO `usuario`(`IdUser`, `Name`, `Password`, `Type`) VALUES (null,{usuario.Name},{usuario.Password},{usuario.Type});";
+                command.Connection = connection;
+
+                int reader = command.ExecuteNonQuery();
+                if (reader != 0) { return true;} else { return false; }
+
+            }
+        }//Fin insertNewUser
 
 
     }//Fin clase

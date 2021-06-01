@@ -8,7 +8,7 @@ namespace ProyectoFinal
 {
     class Usuario
     {
-        internal readonly bool isAdmin;
+        
 
         public int IdUser { get; set; }
         public string Name { get; set; }
@@ -41,7 +41,7 @@ namespace ProyectoFinal
             else { return false; }
 
         }
-        public bool IsUser()
+        public bool isUser()
         {
             if (this.Type == 2)
             {
@@ -52,7 +52,7 @@ namespace ProyectoFinal
                 return false;
             }
         }
-        public bool IsAdmin()
+        public bool isAdmin()
         {
             if (this.Type == 1)
             {
@@ -64,7 +64,7 @@ namespace ProyectoFinal
             }
         }
 
-        public string WhatType()
+        public string whatType()
         {
             string result = "";
             switch (Type)

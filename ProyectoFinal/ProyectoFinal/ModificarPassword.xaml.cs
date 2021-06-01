@@ -32,7 +32,7 @@ namespace ProyectoFinal
 
         private void volver_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(configuracionUser));
+            this.Frame.Navigate(typeof(configuracion));
         }
 
         private void actualizar_Click(object sender, RoutedEventArgs e)
