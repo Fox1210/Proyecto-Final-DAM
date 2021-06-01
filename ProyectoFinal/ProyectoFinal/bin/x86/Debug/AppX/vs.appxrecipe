@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>E54E805F6650B954C4AC5D974B32FB49970C96E3855E95652CA798A9750C9F5C</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>89DFDE9408A6D47E8DCC6A295F9F8D618B5FFAD3D47983A93A3854828C1D907B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>87b5c509-000e-4cad-bee8-d114e3ba0869_1.0.0.0_x86__va1129kak50zj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>87b5c509-000e-4cad-bee8-d114e3ba0869_va1129kak50zj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>87b5c509-000e-4cad-bee8-d114e3ba0869</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-06-01T16:34:48.075</Modified>
+      <Modified>2021-06-01T18:16:13.479</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ProyectoFinal.exe">
       <PackagePath>entrypoint\ProyectoFinal.exe</PackagePath>
-      <Modified>2021-06-01T16:34:47.231</Modified>
+      <Modified>2021-06-01T18:16:11.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\bouncycastle.netcore\1.8.5\lib\netstandard2.0\BouncyCastle.Crypto.dll">
       <PackagePath>BouncyCastle.Crypto.dll</PackagePath>
@@ -94,9 +94,230 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T16:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-04-21T16:30:53.301</Modified>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.948</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.980</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.020</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.086</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.309</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.500</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.534</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.552</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.576</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.710</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.759</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:52.366</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.595</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.611</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.630</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.558</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.671</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.583</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.599</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.487</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.544</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.506</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.516</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.319</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.329</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.344</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.388</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.410</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.474</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.427</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:51.445</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:52.376</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:52.387</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:52.397</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:52.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:52.429</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.734</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.753</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.776</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-06-01T18:13:50.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -105,32 +326,31 @@
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-21T16:30:53.283</Modified>
+      <Modified>2021-06-01T18:13:51.956</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-21T16:30:53.291</Modified>
+      <Modified>2021-06-01T18:13:50.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-21T16:30:53.292</Modified>
+      <Modified>2021-06-01T18:13:51.364</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-21T16:30:53.293</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-21T16:30:53.294</Modified>
+      <Modified>2021-06-01T18:13:51.496</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-04-21T16:30:53.295</Modified>
+      <Modified>2021-06-01T18:13:50.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2021-04-21T16:30:53.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ProyectoFinal.xr.xml">
       <PackagePath>ProyectoFinal.xr.xml</PackagePath>
@@ -138,31 +358,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-06-01T16:28:45.333</Modified>
+      <Modified>2021-06-01T18:15:23.765</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\configuracion.xbf">
       <PackagePath>configuracion.xbf</PackagePath>
-      <Modified>2021-06-01T16:28:45.333</Modified>
+      <Modified>2021-06-01T18:15:23.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-06-01T16:28:45.333</Modified>
+      <Modified>2021-06-01T18:15:23.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ModificarPassword.xbf">
       <PackagePath>ModificarPassword.xbf</PackagePath>
-      <Modified>2021-06-01T16:28:45.334</Modified>
+      <Modified>2021-06-01T18:15:23.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\NuevoUsuario.xbf">
       <PackagePath>NuevoUsuario.xbf</PackagePath>
-      <Modified>2021-06-01T16:28:45.334</Modified>
+      <Modified>2021-06-01T18:15:23.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\PaginaInicioAdmin.xbf">
       <PackagePath>PaginaInicioAdmin.xbf</PackagePath>
-      <Modified>2021-06-01T16:28:45.334</Modified>
+      <Modified>2021-06-01T18:15:23.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\PaginaInicioUser.xbf">
       <PackagePath>PaginaInicioUser.xbf</PackagePath>
-      <Modified>2021-06-01T16:28:45.334</Modified>
+      <Modified>2021-06-01T18:15:23.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -170,11 +390,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-05-31T20:09:01.865</Modified>
+      <Modified>2021-06-01T18:16:12.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\Core\ProyectoFinal.exe">
       <PackagePath>ProyectoFinal.exe</PackagePath>
-      <Modified>2021-06-01T16:34:48.068</Modified>
+      <Modified>2021-06-01T18:16:13.467</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
