@@ -21,9 +21,9 @@
         <TextBlock x:ConnectionId='8' x:Name="textBlockUserType" Margin="240,393,0,0" Text="Tipo del usuario: " TextWrapping="Wrap" FontSize="30" Height="40" Width="310" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <ComboBox x:ConnectionId='9' x:Name="NewUserTypeComboBox" Margin="600,393,0,0" Width="247" Height="45" FontSize="30"/>
 
-        <!--Prueba del comboBox-->
-        <Button x:ConnectionId='10' x:Name="prueboBtn" Content="Button" Margin="904,404,0,0" VerticalAlignment="Top"                        />
-        <TextBlock x:ConnectionId='11' x:Name="prueba" HorizontalAlignment="Left" Margin="1108,328,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <!--Prueba del comboBox--><!--
+        <Button x:Name="prueboBtn" Content="Button" Margin="904,404,0,0" VerticalAlignment="Top" Click="prueboBtn_Click"/>
+        <TextBlock x:Name="prueba" HorizontalAlignment="Left" Margin="1108,328,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>-->
 
 
     </Grid>

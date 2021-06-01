@@ -91,10 +91,10 @@ namespace ProyectoFinal
             await msg.ShowAsync();
         }//Fin mensaje
 
-        private void prueboBtn_Click(object sender, RoutedEventArgs e)
-        {
-            string tipo = NewUserTypeComboBox.Items[NewUserTypeComboBox.SelectedIndex].ToString();
-            prueba.Text = tipo;
-        }
+        //private void prueboBtn_Click(object sender, RoutedEventArgs e)
+        //{
+        //    string tipo = NewUserTypeComboBox.Items[NewUserTypeComboBox.SelectedIndex].ToString();
+        //    prueba.Text = tipo;
+        //}
     }// Fin class
 }
