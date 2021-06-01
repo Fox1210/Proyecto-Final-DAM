@@ -10,19 +10,22 @@
 
     <Grid Margin="0,8,0,-8">
         <Button x:ConnectionId='2' x:Name="volver" Content="Volver" Margin="220,539,0,0" VerticalAlignment="Top" FontSize="30"                      Width="250" Height="50"/>
-        <Button x:ConnectionId='3' x:Name="guardarNuevoUsuarioBtn" Content="Guardar" Margin="810,539,0,0" VerticalAlignment="Top" FontSize="30" Width="250" Height="50"                                />
+        <Button x:ConnectionId='3' x:Name="guardarNuevoUsuarioBtn" Content="Guardar" Margin="810,539,0,0" VerticalAlignment="Top" FontSize="30" Width="250" Height="50"                                  />
 
         <TextBlock x:ConnectionId='4' x:Name="textBlockUserName" Margin="245,225,0,0" Text="Nombre del usuario:" TextWrapping="Wrap" FontSize="30" Height="40" Width="310" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox x:ConnectionId='5' x:Name="UserNameTextBlock" Margin="600,225,0,0" Text="TextBlock" TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Left" Width="247" Height="50" VerticalAlignment="Top"/>
+        <TextBox x:ConnectionId='5' x:Name="NewUserNameTextBlock" Margin="600,225,0,0" Text="" TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Left" Width="247" Height="50" VerticalAlignment="Top" PlaceholderText="Nombre"/>
 
         <TextBlock x:ConnectionId='6' x:Name="textBlockUserPassword" Margin="240,308,0,0" Text="Contraseña del usuario:" TextWrapping="Wrap" FontSize="30" Height="40" Width="350" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <PasswordBox x:ConnectionId='7' x:Name="UserPassword" HorizontalAlignment="Left" Margin="600,308,0,0" VerticalAlignment="Top" Height="50" Width="250" FontSize="30" PlaceholderText="TextBlock" AllowDrop="True" />
+        <PasswordBox x:ConnectionId='7' x:Name="NewUserPasswordBox" HorizontalAlignment="Left" Margin="600,308,0,0" VerticalAlignment="Top" Height="50" Width="250" FontSize="30" PlaceholderText="Contraseña" AllowDrop="True" />
 
         <TextBlock x:ConnectionId='8' x:Name="textBlockUserType" Margin="240,393,0,0" Text="Tipo del usuario: " TextWrapping="Wrap" FontSize="30" Height="40" Width="310" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <ComboBox x:ConnectionId='9' x:Name="UserTypeComboBox" Margin="600,393,0,0" Width="247" Height="45" FontSize="30" >
+        <ComboBox x:ConnectionId='9' x:Name="NewUserTypeComboBox" Margin="600,393,0,0" Width="247" Height="45" FontSize="30">
             <ComboBoxItem Content="Usuario"/>
             <ComboBoxItem Content="Administrador"/>
         </ComboBox>
+        <!--Prueba del comboBox-->
+        <Button x:ConnectionId='10' x:Name="prueboBtn" Content="Button" Margin="904,404,0,0" VerticalAlignment="Top"                        />
+        <TextBlock x:ConnectionId='11' x:Name="prueba" HorizontalAlignment="Left" Margin="1108,328,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
 
     </Grid>

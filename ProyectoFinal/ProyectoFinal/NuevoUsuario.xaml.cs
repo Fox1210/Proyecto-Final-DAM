@@ -26,12 +26,60 @@ namespace ProyectoFinal
         public NuevoUsuario()
         {
             this.InitializeComponent();
-            
+
         }
 
         private void volver_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PaginaInicioAdmin));
+        }//Fin volver
+
+        private void guardarNuevoUsuario_click(object sender, RoutedEventArgs e)
+        {
+            if (NewUserNameTextBlock.Text != String.Empty)
+            {
+                if (NewUserPasswordBox.Password != String.Empty)
+                {
+                    if (NewUserTypeComboBox.SelectedIndex != -1)
+                    {
+                        insertUserInBBDD();
+                    }
+                    else
+                    {
+                        mensaje("El campo tipo no esta relleno");
+                    }
+
+                }
+                else
+                {
+                    mensaje("El campo contraseña no esta relleno");
+                }
+            }
+            else
+            {
+                mensaje("El campo nombre no esta relleno");
+            }
+
+        }//Fin Guardar Nuevo Usuario
+
+        private void insertUserInBBDD()
+        {
+            int type = 1;
+            string tipo = NewUserTypeComboBox.Items[NewUserTypeComboBox.SelectedIndex].ToString();
+            if (tipo.Equals("Usuario"))
+            {
+                type = 2;
+            }
+            Usuario newUser = new Usuario(NewUserNameTextBlock.Text, NewUserPasswordBox.Password, type);
+            bool realizado = App.bbdd.insertNewUser(newUser);
+            if (realizado)
+            {
+                mensaje("El usuario se creo sin problemas");
+            }
+            else
+            {
+                mensaje("Error al crear un nuevo usuario");
+            }
         }
 
         private async void mensaje(String mensaje)
@@ -40,5 +88,11 @@ namespace ProyectoFinal
             var msg = new MessageDialog(mensaje);
             await msg.ShowAsync();
         }//Fin mensaje
+
+        private void prueboBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string tipo = NewUserTypeComboBox.Items[NewUserTypeComboBox.SelectedIndex].ToString();
+            prueba.Text = tipo;
+        }
     }// Fin class
 }

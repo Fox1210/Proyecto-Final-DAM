@@ -22,7 +22,12 @@ namespace ProyectoFinal
             Password = password;
             Type = type;
         }
-
+        public Usuario( string name, string password, int type)
+        {
+            Name = name;
+            Password = password;
+            Type = type;
+        }
         public Usuario()
         {
         }
