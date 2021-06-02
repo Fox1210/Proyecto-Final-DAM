@@ -44,7 +44,7 @@ namespace ProyectoFinal
         {
             this.InitializeComponent();
 
-            App.AtributosList.Sort();
+           
             AtributosDataGrid.ItemsSource = App.AtributosList;
 
         }
@@ -65,20 +65,23 @@ namespace ProyectoFinal
         //bugs que se causan a veces con el movimiento de varias puntuaciones.
         private void load(object sender, Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs e)
         {
-            App.AtributosList.Sort();
             AtributosDataGrid.ItemsSource = App.AtributosList;
         }
 
-       /* private void generarBtn_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             //Atributo atributo_selecionado = (Atributo)DatosAtributosDataGrid.SelectedItem;
             //prueba.Text = atributo_selecionado.ToString() + " " + DatosAtributosDataGrid.SelectedIndex;
-            App.AtributosList.Add(new Atributo("int", "Nombre"));
-            this.InitializeComponent();
+            this.atributos.Add(new Atributo("int", "edad"));
 
             //dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
-           //AtributosList.RemoveAt(DatosAtributosDataGrid.SelectedIndex);
-        }*///Fin de Pruebas
+            //AtributosList.RemoveAt(DatosAtributosDataGrid.SelectedIndex);
+        }
+
+        private void generarBtn_Click(object sender, RoutedEventArgs e)
+         {
+            this.atributos.Add(new Atributo("String", "Nombre"));
+
+        }//Fin de Pruebas
     }//fin class JavaClass
 }

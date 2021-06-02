@@ -11,9 +11,9 @@
     <Grid>
         <Button x:ConnectionId='2' x:Name="volver" Content="Volver" Margin="225,600,0,0" VerticalAlignment="Top" FontSize="30"                      Width="250" Height="50"/>
         <Button x:ConnectionId='3' x:Name="generarBtn" Content="Generar" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250" />
-        <my:DataGrid x:ConnectionId='4' x:Name="AtributosDataGrid"  Margin="733,360,0,0" AutoGenerateColumns="True"                                  IsReadOnly="True"                   Height="200" VerticalAlignment="Top" HorizontalAlignment="Left" Width="450"/>
+        <my:DataGrid x:ConnectionId='4' x:Name="AtributosDataGrid"  Margin="733,360,0,0" AutoGenerateColumns="True"                                  IsReadOnly="True"                   Height="200" VerticalAlignment="Top" HorizontalAlignment="Left" Width="450"></my:DataGrid>
         <TextBlock x:ConnectionId='5' x:Name="prueba" HorizontalAlignment="Left" Margin="958,96,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-
+        <Button x:ConnectionId='6' Content="Button" Margin="1055,165,0,0" VerticalAlignment="Top"                     />
 
     </Grid>
 </Page>
