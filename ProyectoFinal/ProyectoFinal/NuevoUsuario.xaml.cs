@@ -77,6 +77,7 @@ namespace ProyectoFinal
             if (realizado)
             {
                 mensaje("El usuario se creo sin problemas");
+                this.Frame.Navigate(typeof(PaginaInicioAdmin));
             }
             else
             {

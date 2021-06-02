@@ -124,6 +124,9 @@
       <DependentUpon>configuracion.xaml</DependentUpon>
     </Compile>
     <Compile Include="ConnectionBBDD.cs" />
+    <Compile Include="JavaClass.xaml.cs">
+      <DependentUpon>JavaClass.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ModificarPassword.xaml.cs">
       <DependentUpon>ModificarPassword.xaml</DependentUpon>
     </Compile>
@@ -210,6 +213,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="JavaClass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -233,10 +240,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.2.10</Version>
+      <Version>6.2.12</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
+      <Version>7.0.2</Version>
     </PackageReference>
     <PackageReference Include="MySql.Data">
-      <Version>8.0.24</Version>
+      <Version>8.0.25</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
