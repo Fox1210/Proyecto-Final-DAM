@@ -10,8 +10,8 @@
 
     <Grid>
         <Button x:Name="volver" Content="Volver" Margin="225,600,0,0" VerticalAlignment="Top" FontSize="30" Click="volver_Click" Width="250" Height="50"/>
-        <Button x:Name="generarBtn" Content="Generar" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250" Click="generarBtn_Click"/>
-        <my:DataGrid x:Name="DatosAtributosDataGrid"  Margin="733,360,0,0" AutoGenerateColumns="True" ItemsSource="{x:Bind AtributosList}" IsReadOnly="True" Height="200" VerticalAlignment="Top" HorizontalAlignment="Left" Width="450"/>
+        <Button x:Name="generarBtn" Content="Generar" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250" />
+        <my:DataGrid x:Name="AtributosDataGrid"  Margin="733,360,0,0" AutoGenerateColumns="True" ItemsSource="{x:Bind atributos}" IsReadOnly="True" LoadingRow="load" Height="200" VerticalAlignment="Top" HorizontalAlignment="Left" Width="450"/>
         <TextBlock x:Name="prueba" HorizontalAlignment="Left" Margin="958,96,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
 

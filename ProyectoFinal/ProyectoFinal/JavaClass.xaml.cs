@@ -28,20 +28,25 @@ namespace ProyectoFinal
             Datatype = datatype;
             DataName = dataName;
         }
-    }
+        public override string ToString()
+        {
+            return DataName + " " + Datatype;
+        }
+    }//Fin class Atributo
+
     //Ventana y acciones relacionadas con la misma
     public sealed partial class JavaClass : Page
     {
-        public List<Atributo> AtributosList { get; set; }
+        //Lista que toma los datos de la lista Global, la cual enlazamos con ItemSource="{x:Bind (Lista)}" al datagrid
+        public List<Atributo> atributos = App.AtributosList;
+
         public JavaClass()
         {
             this.InitializeComponent();
-            AtributosList = new List<Atributo>();
 
-            AtributosList.Add(new Atributo("String", "Nombre"));
-            AtributosList.Add(new Atributo("String", "Nombre"));
-            AtributosList.Add(new Atributo("String", "Nombre"));
-            AtributosList.Add(new Atributo("String", "Nombre"));
+            App.AtributosList.Sort();
+            AtributosDataGrid.ItemsSource = App.AtributosList;
+
         }
         private void volver_Click(object sender, RoutedEventArgs e)
         {
@@ -56,10 +61,24 @@ namespace ProyectoFinal
             }
         }//Fin volver
 
-        private void generarBtn_Click(object sender, RoutedEventArgs e)
+        //Metodo extra para el evento de carga de filas de Datagrid, está puesto para evitar algunos
+        //bugs que se causan a veces con el movimiento de varias puntuaciones.
+        private void load(object sender, Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs e)
         {
-            DatosAtributosDataGrid
-            //prueba.Text;
+            App.AtributosList.Sort();
+            AtributosDataGrid.ItemsSource = App.AtributosList;
         }
+
+       /* private void generarBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+            //Atributo atributo_selecionado = (Atributo)DatosAtributosDataGrid.SelectedItem;
+            //prueba.Text = atributo_selecionado.ToString() + " " + DatosAtributosDataGrid.SelectedIndex;
+            App.AtributosList.Add(new Atributo("int", "Nombre"));
+            this.InitializeComponent();
+
+            //dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+           //AtributosList.RemoveAt(DatosAtributosDataGrid.SelectedIndex);
+        }*///Fin de Pruebas
     }//fin class JavaClass
 }
