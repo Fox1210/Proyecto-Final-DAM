@@ -127,6 +127,9 @@
     <Compile Include="JavaClass.xaml.cs">
       <DependentUpon>JavaClass.xaml</DependentUpon>
     </Compile>
+    <Compile Include="JavaClassAttributes.xaml.cs">
+      <DependentUpon>JavaClassAttributes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ModificarPassword.xaml.cs">
       <DependentUpon>ModificarPassword.xaml</DependentUpon>
     </Compile>
@@ -214,6 +217,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="JavaClass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="JavaClassAttributes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -44,10 +45,16 @@ namespace ProyectoFinal
         {
             this.InitializeComponent();
 
-           
+
             AtributosDataGrid.ItemsSource = App.AtributosList;
 
         }
+        private async void mensaje(String mensaje)
+        {
+            //muestra un mensaje de usuario o contraseña erroneos
+            var msg = new MessageDialog(mensaje);
+            await msg.ShowAsync();
+        }//Fin de mensaje
         private void volver_Click(object sender, RoutedEventArgs e)
         {
             switch (App.user.whatType())
@@ -59,29 +66,58 @@ namespace ProyectoFinal
                     this.Frame.Navigate(typeof(PaginaInicioUser));
                     break;
             }
-        }//Fin volver
+        }//Fin de volver
 
-        //Metodo extra para el evento de carga de filas de Datagrid, está puesto para evitar algunos
-        //bugs que se causan a veces con el movimiento de varias puntuaciones.
         private void load(object sender, Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs e)
         {
             AtributosDataGrid.ItemsSource = App.AtributosList;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            //Atributo atributo_selecionado = (Atributo)DatosAtributosDataGrid.SelectedItem;
-            //prueba.Text = atributo_selecionado.ToString() + " " + DatosAtributosDataGrid.SelectedIndex;
-            this.atributos.Add(new Atributo("int", "edad"));
-
-            //dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
-            //AtributosList.RemoveAt(DatosAtributosDataGrid.SelectedIndex);
-        }
-
+        }//Fin de load
         private void generarBtn_Click(object sender, RoutedEventArgs e)
-         {
+        {
             this.atributos.Add(new Atributo("String", "Nombre"));
 
-        }//Fin de Pruebas
+        }//Fin de generarBtn_Click
+
+        private void AñadirAtributoBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(JavaClassAttributes));
+        }//Fin de AñadirAtributoBtn_Click
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            //Si no es null, lo pasamos a una variable, y dividimos el string en 2 segun el formato de llegada, que son
+            //2 palabras separadas por un . ejemplo: "String.Nombre", tras eso llama un metodo que hace el resto.
+            if (e.Parameter != null)
+            {
+                string value = (string)e.Parameter;
+                string[] word = new string[2];
+                word = value.Split('.');
+                paramsBuilder(word);
+            }
+        }
+        //Metodo que se ocupa de añadir el equipo nuevo a la lista, 
+        private void paramsBuilder(string[] word)
+        {
+            //hacemos esto para que no crashee, ya que el metodo OnNavigatedTo se activa tambien al cargar el programa
+            //por primera vez, por tanto, e.Parameter seria igual a Null o "", dando lugar a un array de [1], y crasheando
+            //Por indexOutOfBound al llegar a teamProvincia = words[1], por eso para evitarlo, nos aseguramos de que no haga nada
+            //si no hay al menos 2 items en el Array.
+            if (word.Length < 2)
+            {
+
+            }
+            else
+            {
+
+                 
+                string dataType = word[0];
+                string dataName = word[1];
+                addTeamWithParams(dataType, dataName);
+            }
+        }
+        public void addTeamWithParams(string dataType, string dataName)
+        {
+            this.atributos.Add(new Atributo(dataType, dataName));
+        }
     }//fin class JavaClass
 }
