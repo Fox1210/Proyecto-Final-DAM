@@ -12,12 +12,12 @@
         <Button x:Name="volver" Content="Volver" Margin="225,600,0,0" VerticalAlignment="Top" FontSize="30" Click="volver_Click" Width="250" Height="50"/>
         <Button x:Name="generarBtn" Content="Generar" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250" Click="generarBtn_Click"/>
         <my:DataGrid x:Name="AtributosDataGrid"  Margin="733,360,0,0" AutoGenerateColumns="True" ItemsSource="{x:Bind atributos}" IsReadOnly="True" LoadingRow="load" Height="200" VerticalAlignment="Top" HorizontalAlignment="Left" Width="450"></my:DataGrid>
-        <Button Content="Button" Margin="986,280,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="AñadirAtributoBtn" Content="Añadir" Margin="497,256,0,0" VerticalAlignment="Top" Height="53" Width="300" FontSize="30"/>
         <TextBlock x:Name="rutaTextBlock" HorizontalAlignment="Left" Margin="160,110,0,0" Text="Ruta:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <TextBlock HorizontalAlignment="Left" Margin="733,128,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <TextBlock HorizontalAlignment="Left" Margin="733,160,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <TextBox HorizontalAlignment="Left" Margin="1017,102,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <TextBox HorizontalAlignment="Left" Margin="1017,144,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <TextBlock x:Name="NombreClaseTextBlock" HorizontalAlignment="Left" Margin="160,180,0,0" Text="Nombre de la clase:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <TextBlock x:Name="AtributosTextBlock" HorizontalAlignment="Left" Margin="164,256,0,0" Text="Atributos de la clase:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <TextBox x:Name="RutaTextBox" HorizontalAlignment="Left" Margin="497,110,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Ruta del fichero"/>
+        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Margin="497,180,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Nombre de la clase"/>
         <!--<TextBlock x:Name="prueba" HorizontalAlignment="Left" Margin="958,96,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Button Content="Button" Margin="1055,165,0,0" VerticalAlignment="Top" Click="Button_Click"/>-->
 
