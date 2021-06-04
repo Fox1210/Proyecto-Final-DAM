@@ -74,9 +74,15 @@ namespace ProyectoFinal
         }//Fin de load
         private void generarBtn_Click(object sender, RoutedEventArgs e)
         {
-            string ruta;
-            string nombre;
-            this.atributos.Add(new Atributo("String", "Nombre"));
+            string ruta= "c:\\dev\\test.txt";
+           
+            // Create the file, or overwrite if the file exists.
+            using (TextWriter textWriter = new StreamWriter("test.txt"))
+            {
+                // Add some information to the file.
+                textWriter.WriteLine("hola");
+                textWriter.Close();
+            }
 
         }//Fin de generarBtn_Click
 
