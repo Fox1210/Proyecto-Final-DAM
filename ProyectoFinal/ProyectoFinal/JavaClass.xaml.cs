@@ -74,10 +74,10 @@ namespace ProyectoFinal
         }//Fin de load
         private void generarBtn_Click(object sender, RoutedEventArgs e)
         {
-            string ruta= "c:\\dev\\test.txt";
-           
+            //string ruta= "c:\\dev\\test.txt";
+            
             // Create the file, or overwrite if the file exists.
-            using (TextWriter textWriter = new StreamWriter("test.txt"))
+            using (TextWriter textWriter = new StreamWriter("C:\\Users\\pablo\\OneDrive\\Desktop\\test.txt"))
             {
                 // Add some information to the file.
                 textWriter.WriteLine("hola");
