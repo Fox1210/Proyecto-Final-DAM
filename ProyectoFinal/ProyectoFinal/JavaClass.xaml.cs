@@ -94,7 +94,8 @@ namespace ProyectoFinal
                 word = value.Split('.');
                 paramsBuilder(word);
             }
-        }
+        }//Fin de OnNavigatedTo
+        
         //Metodo que se ocupa de añadir el equipo nuevo a la lista, 
         private void paramsBuilder(string[] word)
         {
@@ -114,10 +115,10 @@ namespace ProyectoFinal
                 string dataName = word[1];
                 addTeamWithParams(dataType, dataName);
             }
-        }
+        }//Fin de paramsBuilder
         public void addTeamWithParams(string dataType, string dataName)
         {
             this.atributos.Add(new Atributo(dataType, dataName));
-        }
+        }//Fin de addTeamWithParams
     }//fin class JavaClass
 }

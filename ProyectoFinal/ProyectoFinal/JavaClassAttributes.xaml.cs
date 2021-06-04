@@ -26,6 +26,11 @@ namespace ProyectoFinal
         public JavaClassAttributes()
         {
             this.InitializeComponent();
+            TipoDatoComboBox.Items.Add("String");
+            TipoDatoComboBox.Items.Add("Int");
+            TipoDatoComboBox.Items.Add("Double");
+
+
         }
         private async void mensaje(String mensaje)
         {
@@ -38,5 +43,45 @@ namespace ProyectoFinal
         {
             this.Frame.Navigate(typeof(JavaClass));
         }
-    }
+
+        private void añadir_Click(object sender, RoutedEventArgs e)
+        {
+            bool isCheck = comprobarElementos();
+            if (isCheck)
+            {
+                string atributo = extraeAtributo();
+                this.Frame.Navigate(typeof(JavaClass),atributo);
+            }
+        }
+
+        private string extraeAtributo()
+        {
+            string tipo = TipoDatoComboBox.Items[TipoDatoComboBox.SelectedIndex].ToString();
+            string nombre= NombreTextBox.Text;
+            return tipo + "." +nombre;
+        }//Fin de extraeAtributo
+
+        private bool comprobarElementos()
+        {
+            bool isCheck = false;
+            if (NombreTextBox.Text != String.Empty)
+            {
+                if (TipoDatoComboBox.SelectedIndex != -1)
+                {
+                    isCheck = true;
+                }
+                else
+                {
+                    mensaje("El selector Tipo de dato debe estar relleno");
+                }
+            }
+            else
+            {
+                mensaje("El campo Nombre del atributo debe estar relleno");
+            }
+            return isCheck;
+        }//Fin de comprobarElementos
+
+
+    }//fin class JavaClassAttributes
 }
