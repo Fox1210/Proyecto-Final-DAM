@@ -74,6 +74,8 @@ namespace ProyectoFinal
         }//Fin de load
         private void generarBtn_Click(object sender, RoutedEventArgs e)
         {
+            string ruta;
+            string nombre;
             this.atributos.Add(new Atributo("String", "Nombre"));
 
         }//Fin de generarBtn_Click

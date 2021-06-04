@@ -124,6 +124,7 @@
       <DependentUpon>configuracion.xaml</DependentUpon>
     </Compile>
     <Compile Include="ConnectionBBDD.cs" />
+    <Compile Include="GeneradorClassJava.cs" />
     <Compile Include="JavaClass.xaml.cs">
       <DependentUpon>JavaClass.xaml</DependentUpon>
     </Compile>
