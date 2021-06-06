@@ -57,6 +57,7 @@ namespace ProyectoFinal
         }//Fin de mensaje
         private void volver_Click(object sender, RoutedEventArgs e)
         {
+            atributos.Clear();
             switch (App.user.whatType())
             {
                 case "Administrador":
@@ -77,7 +78,7 @@ namespace ProyectoFinal
             //string ruta= "c:\\dev\\test.txt";
             
             // Create the file, or overwrite if the file exists.
-            using (TextWriter textWriter = new StreamWriter("C:\\Users\\pablo\\OneDrive\\Desktop\\test.txt"))
+            using (TextWriter textWriter = new StreamWriter("C:\\dev\\test.txt"))
             {
                 // Add some information to the file.
                 textWriter.WriteLine("hola");

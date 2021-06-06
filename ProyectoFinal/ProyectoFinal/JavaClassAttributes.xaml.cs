@@ -13,6 +13,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Globalization;
+
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -23,6 +25,7 @@ namespace ProyectoFinal
     /// </summary>
     public sealed partial class JavaClassAttributes : Page
     {
+
         public JavaClassAttributes()
         {
             this.InitializeComponent();
@@ -50,15 +53,26 @@ namespace ProyectoFinal
             if (isCheck)
             {
                 string atributo = extraeAtributo();
-                this.Frame.Navigate(typeof(JavaClass),atributo);
+                this.Frame.Navigate(typeof(JavaClass), atributo);
             }
         }
 
         private string extraeAtributo()
         {
             string tipo = TipoDatoComboBox.Items[TipoDatoComboBox.SelectedIndex].ToString();
-            string nombre= NombreTextBox.Text;
-            return tipo + "." +nombre;
+            string nombre = NombreTextBox.Text;
+            TextInfo myTI = new CultureInfo("en-US", false).TextInfo;
+            nombre = myTI.ToLower(nombre);//hola mundo
+            nombre = myTI.ToTitleCase(nombre);// Hola Mundo
+            nombre = nombre.Replace(" ", String.Empty);//HolaMundo
+            char[] arrayNombre = nombre.ToCharArray();//H,o,l,a,M,u,n,d,o
+            arrayNombre[0] = Char.ToLower(nombre[0]);//h
+            nombre = String.Empty;
+            foreach (char letra in arrayNombre)
+            {
+                nombre += letra;
+            }
+            return tipo + "." + nombre;//String.holaMundo
         }//Fin de extraeAtributo
 
         private bool comprobarElementos()

@@ -10,4 +10,7 @@
     <SplashScreenSource>C:\Users\pablo\OneDrive\Desktop\Proyecto final\LogoPNG.png</SplashScreenSource>
     <PackageLogoSource>C:\Users\pablo\OneDrive\Desktop\Proyecto final\LogoPNG.png</PackageLogoSource>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
 </Project>
