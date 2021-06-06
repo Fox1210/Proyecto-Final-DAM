@@ -9,6 +9,7 @@ namespace ProyectoFinal
     class GenerarJavaClass
     {
         public string Inicio { get; set; }
+        public string Fin { get; set; }
         public string path { get; set; }
         public string nombre { get; set; }
         public List<Atributo> listAtriburos { get; set; }
@@ -19,9 +20,25 @@ namespace ProyectoFinal
             this.path = path;
             this.nombre = nombre;
             this.listAtriburos = listAtriburos;
+            Fin = $"}}";
+        }
+        public string generarAtributos()
+        {
+            string result = "\n";
+            foreach (Atributo item in listAtriburos)
+            {
+
+            }
+            return result;
+        }
+        public string generarConstructores()
+        {
+            string result="\n";
+
+            return result;
         }
         public string generarGetterySetters() {
-            string result=" ";
+            string result="\n";
 
             foreach (Atributo atributo in listAtriburos)
             {
@@ -31,6 +48,6 @@ namespace ProyectoFinal
             }
            
             return result;
-        }
+        }//Fin de generarGetterySetters
     }
 }
