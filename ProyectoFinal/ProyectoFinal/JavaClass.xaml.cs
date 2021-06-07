@@ -76,14 +76,12 @@ namespace ProyectoFinal
         private void generarBtn_Click(object sender, RoutedEventArgs e)
         {
             //string ruta= "c:\\dev\\test.txt";
-            
+
             // Create the file, or overwrite if the file exists.
-            using (TextWriter textWriter = new StreamWriter("C:\\dev\\test.txt"))
-            {
-                // Add some information to the file.
-                textWriter.WriteLine("hola");
-                textWriter.Close();
-            }
+            TextWriter textWriter = new StreamWriter("C:\\dev\\test.txt");
+            // Add some information to the file.
+            textWriter.WriteLine("hola");
+            textWriter.Close();
 
         }//Fin de generarBtn_Click
 
@@ -104,7 +102,7 @@ namespace ProyectoFinal
                 paramsBuilder(word);
             }
         }//Fin de OnNavigatedTo
-        
+
         //Metodo que se ocupa de añadir el equipo nuevo a la lista, 
         private void paramsBuilder(string[] word)
         {
@@ -119,7 +117,7 @@ namespace ProyectoFinal
             else
             {
 
-                 
+
                 string dataType = word[0];
                 string dataName = word[1];
                 addTeamWithParams(dataType, dataName);

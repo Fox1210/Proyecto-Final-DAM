@@ -22,6 +22,30 @@ namespace ProyectoFinal
             this.listAtriburos = listAtriburos;
             Fin = $"}}";
         }
+        public string generarClass()
+        {
+            string result = String.Empty;
+            result += Inicio;
+            if (nombre.Equals("Main"))
+            {
+                result += generarMain();
+            }
+            else
+            {
+                result += generarAtributos();
+                result += generarConstructores();
+                result += generarGetterySetters();
+            }
+
+            result += Fin;
+            return result;
+        }//Fin de generarClass
+        private string generarMain()
+        {
+            string result = String.Empty;
+            result = $"public static void main(String[] args) {{\n\tSystem.out.println(\"Hola Mundo\");\n}}\n";
+            return result;
+        }//Fin de generarMain
         public string generarAtributos()
         {
             string result = "\n";
@@ -30,7 +54,7 @@ namespace ProyectoFinal
                 result += item.Datatype + " " + item.DataName + ";\n";
             }
             return result;
-        }
+        }//Fin de generarAtributos
         public string generarEntradaConstructor()
         {
             string result = String.Empty;
@@ -39,12 +63,12 @@ namespace ProyectoFinal
                 result += listAtriburos[0].Datatype + " " + listAtriburos[0].DataName;
                 for (int i = 1; i < listAtriburos.Capacity; i++)
                 {
-                    result += ", "+listAtriburos[i].Datatype + " " + listAtriburos[i].DataName;
+                    result += ", " + listAtriburos[i].Datatype + " " + listAtriburos[i].DataName;
                 }
 
             }
             return result;
-        }
+        }//Fin de generarEntradaConstructor
         public string generarContenidoConstructor()
         {
             string result = String.Empty;
@@ -54,17 +78,17 @@ namespace ProyectoFinal
                 {
                     result += $"\tthis.{item.DataName} = {item.DataName};\n";
                 }
-                
+
 
             }
             return result;
-        }
+        }//Fin de generarContenidoConstructor
         public string generarConstructores()
         {
             string result = $"{nombre} ({this.generarEntradaConstructor()}){{\n";
 
             return result;
-        }
+        }//Fin de generarConstructores
         public string generarGetterySetters()
         {
             string result = "\n";
