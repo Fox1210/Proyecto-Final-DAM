@@ -14,7 +14,7 @@ namespace ProyectoFinal
         public string nombre { get; set; }
         public List<Atributo> listAtriburos { get; set; }
 
-        public GenerarJavaClass( string path, string nombre, List<Atributo> listAtriburos)
+        public GenerarJavaClass(string path, string nombre, List<Atributo> listAtriburos)
         {
             Inicio = $"public class {nombre} {{\n";
             this.path = path;
@@ -31,14 +31,43 @@ namespace ProyectoFinal
             }
             return result;
         }
+        public string generarEntradaConstructor()
+        {
+            string result = String.Empty;
+            if (listAtriburos.Any())
+            {
+                result += listAtriburos[0].Datatype + " " + listAtriburos[0].DataName;
+                for (int i = 1; i < listAtriburos.Capacity; i++)
+                {
+                    result += ", "+listAtriburos[i].Datatype + " " + listAtriburos[i].DataName;
+                }
+
+            }
+            return result;
+        }
+        public string generarContenidoConstructor()
+        {
+            string result = String.Empty;
+            if (listAtriburos.Any())
+            {
+                foreach (Atributo item in listAtriburos)
+                {
+                    result += $"\tthis.{item.DataName} = {item.DataName};\n";
+                }
+                
+
+            }
+            return result;
+        }
         public string generarConstructores()
         {
-            string result="\n";
+            string result = $"{nombre} ({this.generarEntradaConstructor()}){{\n";
 
             return result;
         }
-        public string generarGetterySetters() {
-            string result="\n";
+        public string generarGetterySetters()
+        {
+            string result = "\n";
 
             foreach (Atributo atributo in listAtriburos)
             {
@@ -46,7 +75,7 @@ namespace ProyectoFinal
                 string set = $"public {atributo.Datatype} set{atributo.DataName}({atributo.Datatype} {atributo.DataName}){{\n\tthis.{atributo.DataName} = {atributo.DataName};\n}}\n";
                 result += get + set;
             }
-           
+
             return result;
         }//Fin de generarGetterySetters
     }
