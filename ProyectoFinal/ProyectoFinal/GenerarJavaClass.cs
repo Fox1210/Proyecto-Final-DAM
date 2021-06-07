@@ -27,7 +27,7 @@ namespace ProyectoFinal
             string result = "\n";
             foreach (Atributo item in listAtriburos)
             {
-
+                result += item.Datatype + " " + item.DataName + ";\n";
             }
             return result;
         }
