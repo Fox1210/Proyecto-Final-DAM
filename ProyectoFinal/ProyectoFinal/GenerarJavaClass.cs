@@ -8,12 +8,14 @@ namespace ProyectoFinal
 {
     class GenerarJavaClass
     {
+        //PROPIEDADES
         public string Inicio { get; set; }
         public string Fin { get; set; }
         public string path { get; set; }
         public string nombre { get; set; }
         public List<Atributo> listAtriburos { get; set; }
 
+        //CONSTRUCTORES
         public GenerarJavaClass(string path, string nombre, List<Atributo> listAtriburos)
         {
             Inicio = $"public class {nombre} {{\n";
@@ -22,6 +24,8 @@ namespace ProyectoFinal
             this.listAtriburos = listAtriburos;
             Fin = $"}}";
         }
+
+        //METODES DE GENRACIÓN DE ARCHIVOS
         public string generarClass()
         {
             string result = String.Empty;
