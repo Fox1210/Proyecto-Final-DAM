@@ -11,15 +11,13 @@ namespace ProyectoFinal
         //PROPIEDADES
         public string Inicio { get; set; }
         public string Fin { get; set; }
-        public string path { get; set; }
         public string nombre { get; set; }
         public List<Atributo> listAtriburos { get; set; }
 
         //CONSTRUCTORES
-        public GenerarJavaClass(string path, string nombre, List<Atributo> listAtriburos)
+        public GenerarJavaClass(string nombre, List<Atributo> listAtriburos)
         {
             Inicio = $"public class {nombre} {{\n";
-            this.path = path;
             this.nombre = nombre;
             this.listAtriburos = listAtriburos;
             Fin = $"}}";
@@ -50,7 +48,7 @@ namespace ProyectoFinal
             result = $"public static void main(String[] args) {{\n\tSystem.out.println(\"Hola Mundo\");\n}}\n";
             return result;
         }//Fin de generarMain
-        public string generarAtributos()
+        private string generarAtributos()
         {
             string result = "\n";
             foreach (Atributo item in listAtriburos)
@@ -59,7 +57,7 @@ namespace ProyectoFinal
             }
             return result;
         }//Fin de generarAtributos
-        public string generarEntradaConstructor()
+        private string generarEntradaConstructor()
         {
             string result = String.Empty;
             if (listAtriburos.Any())
@@ -73,7 +71,7 @@ namespace ProyectoFinal
             }
             return result;
         }//Fin de generarEntradaConstructor
-        public string generarContenidoConstructor()
+        private string generarContenidoConstructor()
         {
             string result = String.Empty;
             if (listAtriburos.Any())
@@ -87,13 +85,13 @@ namespace ProyectoFinal
             }
             return result;
         }//Fin de generarContenidoConstructor
-        public string generarConstructores()
+        private string generarConstructores()
         {
             string result = $"{nombre} ({this.generarEntradaConstructor()}){{\n";
 
             return result;
         }//Fin de generarConstructores
-        public string generarGetterySetters()
+        private string generarGetterySetters()
         {
             string result = "\n";
 
