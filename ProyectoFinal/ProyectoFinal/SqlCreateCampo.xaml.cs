@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text.RegularExpressions;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Popups;
@@ -28,6 +29,15 @@ namespace ProyectoFinal
         {
             this.InitializeComponent();
         }
+        private void añadir_Click(object sender, RoutedEventArgs e)
+        {
+            bool isCheck = comprobarElementos();
+            if (isCheck)
+            {
+                string atributo = extraeAtributo();
+                this.Frame.Navigate(typeof(JavaClass), atributo);
+            }
+        }
         private async void mensaje(String mensaje)
         {
             //muestra un mensaje de usuario o contraseña erroneos
@@ -37,7 +47,7 @@ namespace ProyectoFinal
         private string extraeAtributo()
         {
             string tipo = TipoDatoComboBox.Items[TipoDatoComboBox.SelectedIndex].ToString();
-            
+            string size = TamañoTextBox.Text;
             string nombre = NombreTextBox.Text;
             TextInfo myTI = new CultureInfo("en-US", false).TextInfo;
             nombre = myTI.ToLower(nombre);//hola mundo
@@ -50,28 +60,43 @@ namespace ProyectoFinal
             {
                 nombre += letra;
             }
-            return tipo + "." + nombre;//String.holaMundo
+            return tipo + "." + nombre + "." + size;//String.holaMundo
         }//Fin de extraeAtributo
-        private void añadir_Click(object sender, RoutedEventArgs e)
-        {
-            bool isCheck = comprobarElementos();
-            if (isCheck)
-            {
-                string atributo = extraeAtributo();
-                this.Frame.Navigate(typeof(JavaClass), atributo);
-            }
-        }
 
         private bool comprobarElementos()
         {
-            return true;
-        }
+            bool isCheck = false;
+            if (NombreTextBox.Text != String.Empty)
+            {
+                if (TipoDatoComboBox.SelectedIndex != -1)
+                {
+                    if (Regex.IsMatch(TamañoTextBox.Text, @"^[0-9]+$"))
+                    {
+                        isCheck = true;
+
+                    }
+                    else
+                    {
+                        mensaje("El tamaño no es un número");
+                    }
+                }
+                else
+                {
+                    mensaje("El selector Tipo de dato debe estar relleno");
+                }
+            }
+            else
+            {
+                mensaje("El campo Nombre del atributo debe estar relleno");
+            }
+            return isCheck;
+        }//Fin de comprobarElementos
 
         private void volver_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(SqlCreate));
         }
 
-       
+
     }
 }

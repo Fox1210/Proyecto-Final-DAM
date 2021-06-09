@@ -75,18 +75,18 @@ namespace ProyectoFinal
         }//Fin de load
         private void generarBtn_Click(object sender, RoutedEventArgs e)
         {
-            //string ruta= RutaTextBox.Text;
-            //string nombre = NombreTextBox.Text;
-            //List<Atributo> listAtributos = (List<Atributo>)AtributosDataGrid.ItemsSource;
-            //GenerarJavaClass javaClass = new GenerarJavaClass(nombre, listAtributos);
-            //string classJava = javaClass.generarClass();
+            string ruta = RutaTextBox.Text;
+            string nombre = NombreTextBox.Text;
+            List<Atributo> listAtributos = (List<Atributo>)AtributosDataGrid.ItemsSource;
+            GenerarJavaClass javaClass = new GenerarJavaClass(nombre, listAtributos);
+            App.archivos.classJava = javaClass.generarClass();
 
 
-            // Create the file, or overwrite if the file exists.
-            TextWriter textWriter = new StreamWriter("C:\\test.txt");//TODO sustituir la ruta de prueba por la ruta donde se debe genrar el Archivo
-            // Add some information to the file.
-            textWriter.WriteLine("hola");//TODO sustituir el texto de prueba por la classJava
-            textWriter.Close();
+            //// Create the file, or overwrite if the file exists.
+            //TextWriter textWriter = new StreamWriter("C:\\test.txt");//TODO sustituir la ruta de prueba por la ruta donde se debe genrar el Archivo
+            //// Add some information to the file.
+            //textWriter.WriteLine("hola");//TODO sustituir el texto de prueba por la classJava
+            //textWriter.Close();
 
         }//Fin de generarBtn_Click
 
@@ -125,12 +125,12 @@ namespace ProyectoFinal
 
                 string dataType = word[0];
                 string dataName = word[1];
-                addTeamWithParams(dataType, dataName);
+                addAtributo(dataType, dataName);
             }
         }//Fin de paramsBuilder
-        public void addTeamWithParams(string dataType, string dataName)
+        public void addAtributo(string dataType, string dataName)
         {
             this.atributos.Add(new Atributo(dataType, dataName));
-        }//Fin de addTeamWithParams
+        }//Fin de addAtributo
     }//fin class JavaClass
 }

@@ -120,6 +120,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Archivos.cs" />
     <Compile Include="configuracion.xaml.cs">
       <DependentUpon>configuracion.xaml</DependentUpon>
     </Compile>

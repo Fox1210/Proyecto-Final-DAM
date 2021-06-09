@@ -114,13 +114,13 @@ namespace ProyectoFinal
                 string dataType = word[0];
                 string dataName = word[1];
                 string dataSize = word[2];
-                addTeamWithParams(dataType, dataName,dataSize);
+                addCampo(dataType, dataName,dataSize);
             }
         }//Fin de paramsBuilder
         
-        public void addTeamWithParams(string dataType, string dataName, string dataSize)
+        public void addCampo(string dataType, string dataName, string dataSize)
         {
             this.campos.Add(new Campo(dataType, dataName,dataSize));
-        }//Fin de addTeamWithParams
+        }//Fin de addCampo
     }
 }
