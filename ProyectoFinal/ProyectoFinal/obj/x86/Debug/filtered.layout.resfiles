@@ -59,5 +59,7 @@ NuevoUsuario.xbf
 PaginaInicioAdmin.xbf
 PaginaInicioUser.xbf
 ProyectoFinal.xr.xml
+SqlCreate.xbf
+SqlCreateCampo.xbf
 Properties\Default.rd.xml
 WinMetadata\Windows.winmd

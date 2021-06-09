@@ -7,3 +7,5 @@ ModificarPassword.xbf
 NuevoUsuario.xbf
 PaginaInicioAdmin.xbf
 PaginaInicioUser.xbf
+SqlCreate.xbf
+SqlCreateCampo.xbf

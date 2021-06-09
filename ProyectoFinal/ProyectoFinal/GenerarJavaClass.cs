@@ -53,7 +53,7 @@ namespace ProyectoFinal
             string result = "\n";
             foreach (Atributo item in listAtriburos)
             {
-                result += item.Datatype + " " + item.DataName + ";\n";
+                result += item.Tipo + " " + item.Nombre + ";\n";
             }
             return result;
         }//Fin de generarAtributos
@@ -62,10 +62,10 @@ namespace ProyectoFinal
             string result = String.Empty;
             if (listAtriburos.Any())
             {
-                result += listAtriburos[0].Datatype + " " + listAtriburos[0].DataName;
+                result += listAtriburos[0].Tipo + " " + listAtriburos[0].Nombre;
                 for (int i = 1; i < listAtriburos.Capacity; i++)
                 {
-                    result += ", " + listAtriburos[i].Datatype + " " + listAtriburos[i].DataName;
+                    result += ", " + listAtriburos[i].Tipo + " " + listAtriburos[i].Nombre;
                 }
 
             }
@@ -78,7 +78,7 @@ namespace ProyectoFinal
             {
                 foreach (Atributo item in listAtriburos)
                 {
-                    result += $"\tthis.{item.DataName} = {item.DataName};\n";
+                    result += $"\tthis.{item.Nombre} = {item.Nombre};\n";
                 }
 
 
@@ -97,8 +97,8 @@ namespace ProyectoFinal
 
             foreach (Atributo atributo in listAtriburos)
             {
-                string get = $"public {atributo.Datatype} get{atributo.DataName}(){{\n\treturn {atributo.DataName};\n}}\n";
-                string set = $"public {atributo.Datatype} set{atributo.DataName}({atributo.Datatype} {atributo.DataName}){{\n\tthis.{atributo.DataName} = {atributo.DataName};\n}}\n";
+                string get = $"public {atributo.Tipo} get{atributo.Nombre}(){{\n\treturn {atributo.Nombre};\n}}\n";
+                string set = $"public {atributo.Tipo} set{atributo.Nombre}({atributo.Tipo} {atributo.Nombre}){{\n\tthis.{atributo.Nombre} = {atributo.Nombre};\n}}\n";
                 result += get + set;
             }
 

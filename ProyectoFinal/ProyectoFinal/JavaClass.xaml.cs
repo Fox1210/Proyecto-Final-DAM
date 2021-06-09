@@ -20,18 +20,18 @@ namespace ProyectoFinal
 {
     public class Atributo
     {
-        public string Datatype { get; set; }
-        public string DataName { get; set; }
+        public string Tipo { get; set; }
+        public string Nombre { get; set; }
         //private string AllDataType =[""];
 
         public Atributo(string datatype, string dataName)
         {
-            Datatype = datatype;
-            DataName = dataName;
+            Tipo = datatype;
+            Nombre = dataName;
         }
         public override string ToString()
         {
-            return DataName + " " + Datatype;
+            return Nombre + " " + Tipo;
         }
     }//Fin class Atributo
 

@@ -82,5 +82,7 @@
     <RootType FullName="ProyectoFinal.NuevoUsuario" />
     <RootType FullName="ProyectoFinal.PaginaInicioAdmin" />
     <RootType FullName="ProyectoFinal.PaginaInicioUser" />
+    <RootType FullName="ProyectoFinal.SqlCreate" />
+    <RootType FullName="ProyectoFinal.SqlCreateCampo" />
   </Roots.RootTypes>
 </Roots>

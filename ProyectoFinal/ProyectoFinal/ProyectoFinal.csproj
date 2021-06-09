@@ -143,6 +143,12 @@
     <Compile Include="PaginaInicioUser.xaml.cs">
       <DependentUpon>PaginaInicioUser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SqlCreate.xaml.cs">
+      <DependentUpon>SqlCreate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SqlCreateCampo.xaml.cs">
+      <DependentUpon>SqlCreateCampo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Usuario.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -242,6 +248,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PaginaInicioUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SqlCreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SqlCreateCampo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

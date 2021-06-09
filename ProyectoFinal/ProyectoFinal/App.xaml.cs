@@ -25,6 +25,7 @@ namespace ProyectoFinal
         internal static Usuario user = new Usuario();
         internal static ConnectionBBDD bbdd = new ConnectionBBDD();
         internal static List<Atributo> AtributosList = new List<Atributo>();
+        internal static List<Campo> CampoList = new List<Campo>();
 
         /// <summary>
         /// Inicializa el objeto de aplicación Singleton. Esta es la primera línea de código creado

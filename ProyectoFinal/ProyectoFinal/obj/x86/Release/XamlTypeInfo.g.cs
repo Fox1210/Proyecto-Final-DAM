@@ -223,7 +223,7 @@ namespace ProyectoFinal.ProyectoFinal_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[44];
+            _typeNameTable = new string[46];
             _typeNameTable[0] = "ProyectoFinal.configuracion";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -266,10 +266,12 @@ namespace ProyectoFinal.ProyectoFinal_XamlTypeInfo
             _typeNameTable[39] = "ProyectoFinal.NuevoUsuario";
             _typeNameTable[40] = "ProyectoFinal.PaginaInicioAdmin";
             _typeNameTable[41] = "ProyectoFinal.PaginaInicioUser";
-            _typeNameTable[42] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[43] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[42] = "ProyectoFinal.SqlCreate";
+            _typeNameTable[43] = "ProyectoFinal.SqlCreateCampo";
+            _typeNameTable[44] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[45] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[44];
+            _typeTable = new global::System.Type[46];
             _typeTable[0] = typeof(global::ProyectoFinal.configuracion);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -312,8 +314,10 @@ namespace ProyectoFinal.ProyectoFinal_XamlTypeInfo
             _typeTable[39] = typeof(global::ProyectoFinal.NuevoUsuario);
             _typeTable[40] = typeof(global::ProyectoFinal.PaginaInicioAdmin);
             _typeTable[41] = typeof(global::ProyectoFinal.PaginaInicioUser);
-            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[43] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[42] = typeof(global::ProyectoFinal.SqlCreate);
+            _typeTable[43] = typeof(global::ProyectoFinal.SqlCreateCampo);
+            _typeTable[44] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[45] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -361,7 +365,9 @@ namespace ProyectoFinal.ProyectoFinal_XamlTypeInfo
         private object Activate_39_NuevoUsuario() { return new global::ProyectoFinal.NuevoUsuario(); }
         private object Activate_40_PaginaInicioAdmin() { return new global::ProyectoFinal.PaginaInicioAdmin(); }
         private object Activate_41_PaginaInicioUser() { return new global::ProyectoFinal.PaginaInicioUser(); }
-        private object Activate_42_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_42_SqlCreate() { return new global::ProyectoFinal.SqlCreate(); }
+        private object Activate_43_SqlCreateCampo() { return new global::ProyectoFinal.SqlCreateCampo(); }
+        private object Activate_44_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void VectorAdd_23_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn>)instance;
@@ -386,7 +392,7 @@ namespace ProyectoFinal.ProyectoFinal_XamlTypeInfo
             var newItem = (global::Windows.UI.Xaml.Style)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_43_IList(object instance, object item)
+        private void VectorAdd_45_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -712,9 +718,23 @@ namespace ProyectoFinal.ProyectoFinal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 42:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 42:   //  ProyectoFinal.SqlCreate
+                userType = new global::ProyectoFinal.ProyectoFinal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_42_SqlCreate;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 43:   //  ProyectoFinal.SqlCreateCampo
+                userType = new global::ProyectoFinal.ProyectoFinal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_43_SqlCreateCampo;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 44:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::ProyectoFinal.ProyectoFinal_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_42_TreeViewNode;
+                userType.Activator = Activate_44_TreeViewNode;
                 userType.AddMemberName("IsExpanded");
                 userType.AddMemberName("HasUnrealizedChildren");
                 userType.AddMemberName("Content");
@@ -726,9 +746,9 @@ namespace ProyectoFinal.ProyectoFinal_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 43:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 45:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::ProyectoFinal.ProyectoFinal_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_43_IList;
+                userType.CollectionAdd = VectorAdd_45_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
