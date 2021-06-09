@@ -83,7 +83,7 @@ namespace ProyectoFinal
 
 
             // Create the file, or overwrite if the file exists.
-            TextWriter textWriter = new StreamWriter("C:\\dev\\test.txt");//TODO sustituir la ruta de prueba por la ruta donde se debe genrar el Archivo
+            TextWriter textWriter = new StreamWriter("C:\\test.txt");//TODO sustituir la ruta de prueba por la ruta donde se debe genrar el Archivo
             // Add some information to the file.
             textWriter.WriteLine("hola");//TODO sustituir el texto de prueba por la classJava
             textWriter.Close();

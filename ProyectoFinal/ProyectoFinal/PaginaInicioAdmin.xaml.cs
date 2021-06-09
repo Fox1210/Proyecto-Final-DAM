@@ -46,5 +46,10 @@ namespace ProyectoFinal
             this.Frame.Navigate(typeof(JavaClass));
 
         }
+
+        private void SqlOption_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(SqlCreate));
+        }
     }
 }

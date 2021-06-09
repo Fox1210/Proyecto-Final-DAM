@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-06-09T12:04:45.025</Modified>
+      <Modified>2021-06-09T19:08:05.176</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ProyectoFinal.exe">
       <PackagePath>entrypoint\ProyectoFinal.exe</PackagePath>
-      <Modified>2021-06-09T12:04:43.467</Modified>
+      <Modified>2021-06-09T19:08:03.655</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pablo\.nuget\packages\bouncycastle.netcore\1.8.5\lib\netstandard2.0\BouncyCastle.Crypto.dll">
       <PackagePath>BouncyCastle.Crypto.dll</PackagePath>
@@ -366,47 +366,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-06-09T12:04:43.157</Modified>
+      <Modified>2021-06-09T19:08:03.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\configuracion.xbf">
       <PackagePath>configuracion.xbf</PackagePath>
-      <Modified>2021-06-09T12:04:43.158</Modified>
+      <Modified>2021-06-09T19:08:03.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\JavaClass.xbf">
       <PackagePath>JavaClass.xbf</PackagePath>
-      <Modified>2021-06-09T12:04:43.158</Modified>
+      <Modified>2021-06-09T19:08:03.362</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\JavaClassAttributes.xbf">
       <PackagePath>JavaClassAttributes.xbf</PackagePath>
-      <Modified>2021-06-09T12:04:43.158</Modified>
+      <Modified>2021-06-09T19:08:03.362</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-06-09T12:04:43.158</Modified>
+      <Modified>2021-06-09T19:08:03.362</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ModificarPassword.xbf">
       <PackagePath>ModificarPassword.xbf</PackagePath>
-      <Modified>2021-06-09T12:04:43.158</Modified>
+      <Modified>2021-06-09T19:08:03.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\NuevoUsuario.xbf">
       <PackagePath>NuevoUsuario.xbf</PackagePath>
-      <Modified>2021-06-09T12:04:43.159</Modified>
+      <Modified>2021-06-09T19:08:03.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\PaginaInicioAdmin.xbf">
       <PackagePath>PaginaInicioAdmin.xbf</PackagePath>
-      <Modified>2021-06-09T12:04:43.159</Modified>
+      <Modified>2021-06-09T19:08:03.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\PaginaInicioUser.xbf">
       <PackagePath>PaginaInicioUser.xbf</PackagePath>
-      <Modified>2021-06-09T12:04:43.159</Modified>
+      <Modified>2021-06-09T19:08:03.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\SqlCreate.xbf">
       <PackagePath>SqlCreate.xbf</PackagePath>
-      <Modified>2021-06-09T12:04:43.159</Modified>
+      <Modified>2021-06-09T19:08:03.364</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\SqlCreateCampo.xbf">
       <PackagePath>SqlCreateCampo.xbf</PackagePath>
-      <Modified>2021-06-09T12:04:43.160</Modified>
+      <Modified>2021-06-09T19:08:03.364</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -422,11 +422,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-06-09T11:55:47.592</Modified>
+      <Modified>2021-06-09T16:52:19.199</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\Core\ProyectoFinal.exe">
       <PackagePath>ProyectoFinal.exe</PackagePath>
-      <Modified>2021-06-09T12:04:45.019</Modified>
+      <Modified>2021-06-09T19:08:05.169</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

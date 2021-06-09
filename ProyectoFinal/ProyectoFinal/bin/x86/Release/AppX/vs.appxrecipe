@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-06-07T09:50:23.857</Modified>
+      <Modified>2021-06-09T16:48:39.358</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -294,19 +294,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Release\ilc\ProyectoFinal.dll">
       <PackagePath>ProyectoFinal.dll</PackagePath>
-      <Modified>2021-06-07T09:50:21.295</Modified>
+      <Modified>2021-06-09T16:48:36.670</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Release\ilc\ProyectoFinal.exe">
       <PackagePath>ProyectoFinal.exe</PackagePath>
-      <Modified>2021-06-07T09:50:23.810</Modified>
+      <Modified>2021-06-09T16:48:39.311</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Release\ilc\ProyectoFinal.pdb">
       <PackagePath>ProyectoFinal.pdb</PackagePath>
-      <Modified>2021-06-07T09:50:23.808</Modified>
+      <Modified>2021-06-09T16:48:39.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-06-07T09:47:07.473</Modified>
+      <Modified>2021-06-09T16:45:52.298</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

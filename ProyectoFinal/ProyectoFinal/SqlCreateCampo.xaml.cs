@@ -37,6 +37,7 @@ namespace ProyectoFinal
         private string extraeAtributo()
         {
             string tipo = TipoDatoComboBox.Items[TipoDatoComboBox.SelectedIndex].ToString();
+            
             string nombre = NombreTextBox.Text;
             TextInfo myTI = new CultureInfo("en-US", false).TextInfo;
             nombre = myTI.ToLower(nombre);//hola mundo
@@ -70,5 +71,7 @@ namespace ProyectoFinal
         {
             this.Frame.Navigate(typeof(SqlCreate));
         }
+
+       
     }
 }
