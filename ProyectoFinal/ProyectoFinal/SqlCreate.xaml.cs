@@ -66,11 +66,6 @@ namespace ProyectoFinal
                     break;
             }
         }//Fin de volver
-
-        private void load(object sender, Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs e)
-        {
-            AtributosDataGrid.ItemsSource = App.AtributosList;
-        }//Fin de load
         private void generarBtn_Click(object sender, RoutedEventArgs e)
         {
             //string ruta= RutaTextBox.Text;
@@ -87,16 +82,18 @@ namespace ProyectoFinal
             textWriter.Close();
 
         }//Fin de generarBtn_Click
-
         private void AñadirCampoBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(SqlCreateCampo));
-        }//Fin de AñadirAtributoBtn_Click
+        }//Fin de AñadirCampoBtn_Click
+
+        private void load(object sender, Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs e)
+        {
+            AtributosDataGrid.ItemsSource = App.AtributosList;
+        }//Fin de load
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //Si no es null, lo pasamos a una variable, y dividimos el string en 2 segun el formato de llegada, que son
-            //2 palabras separadas por un . ejemplo: "String.Nombre", tras eso llama un metodo que hace el resto.
             if (e.Parameter != null)
             {
                 string value = (string)e.Parameter;
@@ -106,7 +103,6 @@ namespace ProyectoFinal
             }
         }//Fin de OnNavigatedTo
 
-        //Metodo que se ocupa de añadir el equipo nuevo a la lista, 
         private void paramsBuilder(string[] word)
         {
             if (word.Length < 3)
@@ -121,6 +117,7 @@ namespace ProyectoFinal
                 addTeamWithParams(dataType, dataName,dataSize);
             }
         }//Fin de paramsBuilder
+        
         public void addTeamWithParams(string dataType, string dataName, string dataSize)
         {
             this.campos.Add(new Campo(dataType, dataName,dataSize));
