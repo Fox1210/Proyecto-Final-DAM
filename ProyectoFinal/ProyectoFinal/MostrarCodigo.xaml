@@ -11,6 +11,6 @@
     <Grid>
         <Button x:Name="volverBtn" Content="Volver" Margin="225,600,0,0" VerticalAlignment="Top" FontSize="30" Click="volver_Click" Width="250" Height="50"/>
         <Button x:Name="añadirBtn" Content="Añadir" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250" />
-        <TextBlock x:Name="CodigoTextBlock" Margin="200,150,200,0" Text="Resultado" TextWrapping="Wrap" VerticalAlignment="Top" Height="400" FontSize="15" />
+        <TextBox x:Name="CodigoTextBlock" Margin="200,150,200,0" Text="Resultado" TextWrapping="Wrap" VerticalAlignment="Top" Height="400" FontSize="15" IsReadOnly="True" />
     </Grid>
 </Page>

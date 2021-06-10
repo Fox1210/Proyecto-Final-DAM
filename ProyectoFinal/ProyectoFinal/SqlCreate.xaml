@@ -10,14 +10,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="volver" Content="Volver" Margin="225,600,0,0" VerticalAlignment="Top" FontSize="30" Click="volver_Click" Width="250" Height="50"/>
-        <Button x:Name="generarBtn" Content="Generar" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250" Click="generarBtn_Click"/>
+        <TextBlock x:Name="NombreBBDDTextBlock" HorizontalAlignment="Left" Margin="303,102,0,0" Text="Nombre de la BBDD:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" />
+        <TextBox x:Name="NombreBBDDTextBox" HorizontalAlignment="Left" Margin="640,102,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Nombre de la BBDD"/>
+        
 
-        <TextBlock x:Name="NombreClaseTextBlock" HorizontalAlignment="Left" Margin="303,160,0,0" Text="Nombre de la Tabla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Margin="640,160,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Nombre de la clase"/>
+        <TextBlock x:Name="NombreTablaTextBlock" HorizontalAlignment="Left" Margin="303,160,0,0" Text="Nombre de la Tabla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <TextBox x:Name="NombreTablaTextBox" HorizontalAlignment="Left" Margin="640,160,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Nombre de la Tabla"/>
 
         <!--<TextBlock x:Name="CampoTextBlock" HorizontalAlignment="Left" Margin="307,236,0,0" Text="Atributos de la clase:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>-->
         <Button x:Name="AñadirCampoBtn" Content="Añadir Campo" Margin="303,236,0,0" VerticalAlignment="Top" Height="53" Width="637" FontSize="30" Click="AñadirCampoBtn_Click"/>
-        <my:DataGrid x:Name="CampoDataGrid"  Margin="0,330,0,0" AutoGenerateColumns="True" ItemsSource="{x:Bind campos}" IsReadOnly="True" LoadingRow="load" Height="200" VerticalAlignment="Top" HorizontalAlignment="Center" Width="980" DoubleTapped="" />
+        <my:DataGrid x:Name="CampoDataGrid"  Margin="0,330,0,0" AutoGenerateColumns="True" ItemsSource="{x:Bind campos}" IsReadOnly="True" LoadingRow="load" Height="200" VerticalAlignment="Top" HorizontalAlignment="Center" Width="980"  />
+        
+        <Button x:Name="volver" Content="Volver" Margin="225,600,0,0" VerticalAlignment="Top" FontSize="30" Click="volver_Click" Width="250" Height="50"/>
+        <Button x:Name="generarBtn" Content="Generar" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250" Click="generarBtn_Click"/>
     </Grid>
 </Page>

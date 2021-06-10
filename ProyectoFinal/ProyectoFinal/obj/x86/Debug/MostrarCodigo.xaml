@@ -11,7 +11,7 @@
     <Grid>
         <Button x:ConnectionId='2' x:Name="volverBtn" Content="Volver" Margin="225,600,0,0" VerticalAlignment="Top" FontSize="30"                      Width="250" Height="50"/>
         <Button x:ConnectionId='3' x:Name="añadirBtn" Content="Añadir" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250" />
-        <TextBlock x:ConnectionId='4' x:Name="CodigoTextBlock" Margin="200,150,200,0" Text="Resultado" TextWrapping="Wrap" VerticalAlignment="Top" Height="400" FontSize="15" />
+        <TextBox x:ConnectionId='4' x:Name="CodigoTextBlock" Margin="200,150,200,0" Text="Resultado" TextWrapping="Wrap" VerticalAlignment="Top" Height="400" FontSize="15" IsReadOnly="True" />
     </Grid>
 </Page>
 

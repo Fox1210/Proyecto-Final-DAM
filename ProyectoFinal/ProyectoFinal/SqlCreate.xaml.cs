@@ -68,18 +68,18 @@ namespace ProyectoFinal
         }//Fin de volver
         private void generarBtn_Click(object sender, RoutedEventArgs e)
         {
-            //string ruta= RutaTextBox.Text;
-            //string nombre = NombreTextBox.Text;
-            //List<Atributo> listAtributos = (List<Atributo>)CampoDataGrid.ItemsSource;
-            //GenerarJavaClass javaClass = new GenerarJavaClass(nombre, listAtributos);
-            //string classJava = javaClass.generarClass();
+            string nombre = NombreTextBox.Text;
+            List<Campo> listAtributos = (List<Campo>)CampoDataGrid.ItemsSource;
+            GenerarSQL sqlClass = new GenerarSQL(nombre, listAtributos);
+            App.archivos.sqlCreate = sqlClass.generarClass();
 
+            this.Frame.Navigate(typeof(MostrarCodigo),"sql");
 
-            // Create the file, or overwrite if the file exists.
-            TextWriter textWriter = new StreamWriter("C:\\dev\\test.txt");//TODO sustituir la ruta de prueba por la ruta donde se debe genrar el Archivo
-            // Add some information to the file.
-            textWriter.WriteLine("hola");//TODO sustituir el texto de prueba por la classJava
-            textWriter.Close();
+            //// Create the file, or overwrite if the file exists.
+            //TextWriter textWriter = new StreamWriter("C:\\dev\\test.txt");//TODO sustituir la ruta de prueba por la ruta donde se debe genrar el Archivo
+            //// Add some information to the file.
+            //textWriter.WriteLine("hola");//TODO sustituir el texto de prueba por la classJava
+            //textWriter.Close();
 
         }//Fin de generarBtn_Click
         private void AñadirCampoBtn_Click(object sender, RoutedEventArgs e)
@@ -118,5 +118,7 @@ namespace ProyectoFinal
         {
             this.campos.Add(new Campo(dataType, dataName,dataSize));
         }//Fin de addCampo
+
+        
     }
 }

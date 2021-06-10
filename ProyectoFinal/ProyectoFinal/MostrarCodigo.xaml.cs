@@ -36,13 +36,41 @@ namespace ProyectoFinal
             {
                 lenguaje = (string)e.Parameter;
                 
-                
+                codigo = extraerCodigo();
+                CodigoTextBlock.Text = codigo;
+
             }
         }//Fin de OnNavigatedTo
 
+        private string extraerCodigo()
+        {
+            string result=String.Empty;
+            switch (lenguaje)
+            {
+                case "sql":
+                    result = App.archivos.sqlCreate;
+                    break;
+                case "java":
+                    result = App.archivos.classJava;
+                    break;
+                default:
+                    result = "Se produjo algun problema al generar el código";
+                    break;
+            }
+            return result;
+        }
+
         private void volver_Click(object sender, RoutedEventArgs e)
         {
-
+            switch (lenguaje)
+            {
+                case "sql":
+                    this.Frame.Navigate(typeof(SqlCreate));
+                    break;
+                default:
+                    this.Frame.Navigate(typeof(MainPage));
+                    break;
+            }
         }
     }
 }
