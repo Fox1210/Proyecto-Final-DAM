@@ -44,7 +44,7 @@ namespace ProyectoFinal
         public SqlCreate()
         {
             this.InitializeComponent();
-            AtributosDataGrid.ItemsSource = App.CampoList;
+            CampoDataGrid.ItemsSource = App.CampoList;
         }
 
         private async void mensaje(String mensaje)
@@ -70,7 +70,7 @@ namespace ProyectoFinal
         {
             //string ruta= RutaTextBox.Text;
             //string nombre = NombreTextBox.Text;
-            //List<Atributo> listAtributos = (List<Atributo>)AtributosDataGrid.ItemsSource;
+            //List<Atributo> listAtributos = (List<Atributo>)CampoDataGrid.ItemsSource;
             //GenerarJavaClass javaClass = new GenerarJavaClass(nombre, listAtributos);
             //string classJava = javaClass.generarClass();
 
@@ -89,7 +89,7 @@ namespace ProyectoFinal
 
         private void load(object sender, Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs e)
         {
-            AtributosDataGrid.ItemsSource = App.AtributosList;
+            CampoDataGrid.ItemsSource = App.CampoList;
         }//Fin de load
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -105,11 +105,7 @@ namespace ProyectoFinal
 
         private void paramsBuilder(string[] word)
         {
-            if (word.Length < 3)
-            {
-
-            }
-            else
+            if (word.Length < 3){}else
             {
                 string dataType = word[0];
                 string dataName = word[1];

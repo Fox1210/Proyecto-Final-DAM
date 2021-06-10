@@ -126,6 +126,7 @@
     </Compile>
     <Compile Include="ConnectionBBDD.cs" />
     <Compile Include="GenerarJavaClass.cs" />
+    <Compile Include="GenerarSQL.cs" />
     <Compile Include="JavaClass.xaml.cs">
       <DependentUpon>JavaClass.xaml</DependentUpon>
     </Compile>
@@ -134,6 +135,9 @@
     </Compile>
     <Compile Include="ModificarPassword.xaml.cs">
       <DependentUpon>ModificarPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarCodigo.xaml.cs">
+      <DependentUpon>MostrarCodigo.xaml</DependentUpon>
     </Compile>
     <Compile Include="NuevoUsuario.xaml.cs">
       <DependentUpon>NuevoUsuario.xaml</DependentUpon>
@@ -237,6 +241,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ModificarPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MostrarCodigo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

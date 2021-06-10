@@ -4,26 +4,20 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ProyectoFinal"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:my="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:my="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <Button x:Name="volver" Content="Volver" Margin="225,600,0,0" VerticalAlignment="Top" FontSize="30" Click="volver_Click" Width="250" Height="50"/>
         <Button x:Name="generarBtn" Content="Generar" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250" Click="generarBtn_Click"/>
-       
-        <TextBlock x:Name="rutaTextBlock" HorizontalAlignment="Left" Margin="160,110,0,0" Text="Ruta:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <TextBox x:Name="RutaTextBox" HorizontalAlignment="Left" Margin="497,110,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Ruta del fichero"/>
-        
-        <TextBlock x:Name="NombreClaseTextBlock" HorizontalAlignment="Left" Margin="160,180,0,0" Text="Nombre de la clase:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Margin="497,180,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Nombre de la clase"/>
-        
-        <TextBlock x:Name="AtributosTextBlock" HorizontalAlignment="Left" Margin="164,256,0,0" Text="Atributos de la clase:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <my:DataGrid x:Name="AtributosDataGrid"  Margin="733,360,0,0" AutoGenerateColumns="True" ItemsSource="{x:Bind campos}" IsReadOnly="True" LoadingRow="load" Height="200" VerticalAlignment="Top" HorizontalAlignment="Left" Width="450"></my:DataGrid>
-        <Button x:Name="AñadirAtributoBtn" Content="Añadir" Margin="497,256,0,0" VerticalAlignment="Top" Height="53" Width="300" FontSize="30" Click="AñadirCampoBtn_Click"/>
-       
-        <!--<TextBlock x:Name="prueba" HorizontalAlignment="Left" Margin="958,96,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button Content="Button" Margin="1055,165,0,0" VerticalAlignment="Top" Click="Button_Click"/>-->
 
+        <TextBlock x:Name="NombreClaseTextBlock" HorizontalAlignment="Left" Margin="303,160,0,0" Text="Nombre de la Tabla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Margin="640,160,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Nombre de la clase"/>
+
+        <!--<TextBlock x:Name="CampoTextBlock" HorizontalAlignment="Left" Margin="307,236,0,0" Text="Atributos de la clase:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>-->
+        <Button x:Name="AñadirCampoBtn" Content="Añadir Campo" Margin="303,236,0,0" VerticalAlignment="Top" Height="53" Width="637" FontSize="30" Click="AñadirCampoBtn_Click"/>
+        <my:DataGrid x:Name="CampoDataGrid"  Margin="0,330,0,0" AutoGenerateColumns="True" ItemsSource="{x:Bind campos}" IsReadOnly="True" LoadingRow="load" Height="200" VerticalAlignment="Top" HorizontalAlignment="Center" Width="980" DoubleTapped="" />
     </Grid>
 </Page>

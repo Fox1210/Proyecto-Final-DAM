@@ -303,6 +303,9 @@
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\ModificarPassword.xbf">
       <PackagePath>ModificarPassword.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\MostrarCodigo.xbf">
+      <PackagePath>MostrarCodigo.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\Proyecto Final DAM\Proyecto-Final-DAM\ProyectoFinal\ProyectoFinal\bin\x86\Debug\NuevoUsuario.xbf">
       <PackagePath>NuevoUsuario.xbf</PackagePath>
     </AppxPackagedFile>

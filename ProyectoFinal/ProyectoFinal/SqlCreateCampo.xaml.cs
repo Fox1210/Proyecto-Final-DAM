@@ -28,6 +28,7 @@ namespace ProyectoFinal
         public SqlCreateCampo()
         {
             this.InitializeComponent();
+            TipoDatoComboBox.Items.Add("Varchar");
         }
         private void añadir_Click(object sender, RoutedEventArgs e)
         {
@@ -35,7 +36,7 @@ namespace ProyectoFinal
             if (isCheck)
             {
                 string atributo = extraeAtributo();
-                this.Frame.Navigate(typeof(JavaClass), atributo);
+                this.Frame.Navigate(typeof(SqlCreate), atributo);
             }
         }
         private async void mensaje(String mensaje)
@@ -62,7 +63,6 @@ namespace ProyectoFinal
             }
             return tipo + "." + nombre + "." + size;//String.holaMundo
         }//Fin de extraeAtributo
-
         private bool comprobarElementos()
         {
             bool isCheck = false;
@@ -91,7 +91,6 @@ namespace ProyectoFinal
             }
             return isCheck;
         }//Fin de comprobarElementos
-
         private void volver_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(SqlCreate));
