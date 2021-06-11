@@ -28,7 +28,12 @@ namespace ProyectoFinal
         public SqlCreateCampo()
         {
             this.InitializeComponent();
-            TipoDatoComboBox.Items.Add("Varchar");
+            TipoDatoComboBox.Items.Add("VARCHAR");
+            TipoDatoComboBox.Items.Add("INT");
+            TipoDatoComboBox.Items.Add("DOUBLE");
+            TipoDatoComboBox.Items.Add("BOOLEAN");
+
+
         }
         private void añadir_Click(object sender, RoutedEventArgs e)
         {
@@ -48,7 +53,16 @@ namespace ProyectoFinal
         private string extraeAtributo()
         {
             string tipo = TipoDatoComboBox.Items[TipoDatoComboBox.SelectedIndex].ToString();
-            string size = TamañoTextBox.Text;
+            string size;
+            if (tipo.Equals("BOOLEAN"))
+            {
+                 size = String.Empty;
+            }
+            else
+            {
+                 size = TamañoTextBox.Text;
+            }
+            
             string nombre = NombreTextBox.Text;
             TextInfo myTI = new CultureInfo("en-US", false).TextInfo;
             nombre = myTI.ToLower(nombre);//hola mundo
@@ -70,7 +84,7 @@ namespace ProyectoFinal
             {
                 if (TipoDatoComboBox.SelectedIndex != -1)
                 {
-                    if (Regex.IsMatch(TamañoTextBox.Text, @"^[0-9]+$"))
+                    if (Regex.IsMatch(TamañoTextBox.Text, @"^[0-9]+$") || TamañoTextBox.Text.Equals(String.Empty))
                     {
                         isCheck = true;
 

@@ -32,6 +32,7 @@ namespace ProyectoFinal
             TipoDatoComboBox.Items.Add("String");
             TipoDatoComboBox.Items.Add("Int");
             TipoDatoComboBox.Items.Add("Double");
+            TipoDatoComboBox.Items.Add("Boolean");
 
 
         }

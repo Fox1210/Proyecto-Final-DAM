@@ -53,7 +53,7 @@ namespace ProyectoFinal
             string result = "\n";
             foreach (Atributo item in listAtriburos)
             {
-                result += "\t"+item.Tipo + " " + item.Nombre + ";\n";
+                result += "\t" + item.Tipo + " " + item.Nombre + ";\n";
             }
             return result + "\n";
         }//Fin de generarAtributos
@@ -62,18 +62,13 @@ namespace ProyectoFinal
             string result = String.Empty;
             if (listAtriburos.Any())
             {
-                if (listAtriburos.Count == 1)
+
+                result += listAtriburos[0].Tipo + " " + listAtriburos[0].Nombre;
+                for (int i = 1; i < listAtriburos.Count; i++)
                 {
-                    result += listAtriburos[0].Tipo + " este " + listAtriburos[0].Nombre;
+                    result += ", " + listAtriburos[i].Tipo + " " + listAtriburos[i].Nombre;
                 }
-                else
-                {
-                    result += listAtriburos[0].Tipo + " " + listAtriburos[0].Nombre;
-                    for (int i = 1; i < listAtriburos.Count; i++)
-                    {
-                        result += ", " + listAtriburos[i].Tipo + " " + listAtriburos[i].Nombre;
-                    }
-                }
+
             }
             return result;
         }//Fin de generarEntradaConstructor
@@ -105,7 +100,7 @@ namespace ProyectoFinal
             {
                 string get = $"\tpublic {atributo.Tipo} get{atributo.Nombre}(){{\n\t\treturn {atributo.Nombre};\n\t}}\n";
                 string set = $"\tpublic set{atributo.Nombre}({atributo.Tipo} {atributo.Nombre}){{\n\t\tthis.{atributo.Nombre} = {atributo.Nombre};\n\t}}\n";
-                result += get + set+"\n";
+                result += get + set + "\n";
             }
 
             return result;
