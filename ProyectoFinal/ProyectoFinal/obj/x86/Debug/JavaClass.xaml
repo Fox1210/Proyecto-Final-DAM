@@ -11,13 +11,11 @@
     <Grid>
         <Button x:ConnectionId='2' x:Name="volver" Content="Volver" Margin="225,600,0,0" VerticalAlignment="Top" FontSize="30"                      Width="250" Height="50"/>
         <Button x:ConnectionId='3' x:Name="generarBtn" Content="Generar" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250"                         />
-        <my:DataGrid x:ConnectionId='4' x:Name="AtributosDataGrid"  Margin="733,360,0,0" AutoGenerateColumns="True"                                  IsReadOnly="True"                   Height="200" VerticalAlignment="Top" HorizontalAlignment="Left" Width="450"></my:DataGrid>
-        <Button x:ConnectionId='5' x:Name="AñadirAtributoBtn" Content="Añadir" Margin="497,256,0,0" VerticalAlignment="Top" Height="53" Width="300" FontSize="30"                                />
-        <TextBlock x:ConnectionId='6' x:Name="rutaTextBlock" HorizontalAlignment="Left" Margin="160,110,0,0" Text="Ruta:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <TextBlock x:ConnectionId='7' x:Name="NombreClaseTextBlock" HorizontalAlignment="Left" Margin="160,180,0,0" Text="Nombre de la clase:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <TextBlock x:ConnectionId='8' x:Name="AtributosTextBlock" HorizontalAlignment="Left" Margin="164,256,0,0" Text="Atributos de la clase:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <TextBox x:ConnectionId='9' x:Name="RutaTextBox" HorizontalAlignment="Left" Margin="497,110,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Ruta del fichero"/>
-        <TextBox x:ConnectionId='10' x:Name="NombreTextBox" HorizontalAlignment="Left" Margin="497,180,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Nombre de la clase"/>
+        <my:DataGrid x:ConnectionId='4' x:Name="AtributosDataGrid"  Margin="150,330,150,0" AutoGenerateColumns="True"                                  IsReadOnly="True"                   Height="200" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='5' x:Name="AñadirAtributoBtn" Content="Añadir" Margin="640,228,0,0" VerticalAlignment="Top" Height="53" Width="300" FontSize="30"                                />
+        <TextBlock x:ConnectionId='6' x:Name="NombreClaseTextBlock" HorizontalAlignment="Left" Margin="303,152,0,0" Text="Nombre de la clase:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <TextBlock x:ConnectionId='7' x:Name="AtributosTextBlock" HorizontalAlignment="Left" Margin="307,228,0,0" Text="Atributos de la clase:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <TextBox x:ConnectionId='8' x:Name="NombreTextBox" HorizontalAlignment="Left" Margin="640,152,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Nombre de la clase"/>
         <!--<TextBlock x:Name="prueba" HorizontalAlignment="Left" Margin="958,96,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Button Content="Button" Margin="1055,165,0,0" VerticalAlignment="Top" Click="Button_Click"/>-->
 

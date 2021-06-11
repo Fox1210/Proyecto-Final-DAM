@@ -75,18 +75,20 @@ namespace ProyectoFinal
         }//Fin de load
         private void generarBtn_Click(object sender, RoutedEventArgs e)
         {
-            string ruta = RutaTextBox.Text;
-            string nombre = NombreTextBox.Text;
-            List<Atributo> listAtributos = (List<Atributo>)AtributosDataGrid.ItemsSource;
-            GenerarJavaClass javaClass = new GenerarJavaClass(nombre, listAtributos);
-            App.archivos.classJava = javaClass.generarClass();
+            if (NombreTextBox.Text != String.Empty)
+            {
+                string nombre = NombreTextBox.Text;
+                List<Atributo> listAtributos = (List<Atributo>)AtributosDataGrid.ItemsSource;
+                GenerarJavaClass javaClass = new GenerarJavaClass(nombre, listAtributos);
+                App.archivos.classJava = javaClass.generarClass();
 
+                this.Frame.Navigate(typeof(MostrarCodigo), "java");
+            }
+            else
+            {
+                mensaje("El campo Nombre esta vacio");
+            }
 
-            //// Create the file, or overwrite if the file exists.
-            //TextWriter textWriter = new StreamWriter("C:\\test.txt");//TODO sustituir la ruta de prueba por la ruta donde se debe genrar el Archivo
-            //// Add some information to the file.
-            //textWriter.WriteLine("hola");//TODO sustituir el texto de prueba por la classJava
-            //textWriter.Close();
 
         }//Fin de generarBtn_Click
 

@@ -68,9 +68,10 @@ namespace ProyectoFinal
         }//Fin de volver
         private void generarBtn_Click(object sender, RoutedEventArgs e)
         {
-            string nombre = NombreTextBox.Text;
+            string bbDD = NombreBBDDTextBox.Text;
+            string tabla = NombreTablaTextBox.Text;
             List<Campo> listAtributos = (List<Campo>)CampoDataGrid.ItemsSource;
-            GenerarSQL sqlClass = new GenerarSQL(nombre, listAtributos);
+            GenerarSQL sqlClass = new GenerarSQL(bbDD, tabla, listAtributos);
             App.archivos.sqlCreate = sqlClass.generarClass();
 
             this.Frame.Navigate(typeof(MostrarCodigo),"sql");

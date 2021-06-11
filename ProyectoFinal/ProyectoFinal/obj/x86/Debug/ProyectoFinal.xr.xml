@@ -43,8 +43,6 @@
       <RootProperty Name="IsReadOnly" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
       <RootEvent Name="LoadingRow" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">

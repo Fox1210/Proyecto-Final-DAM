@@ -8,12 +8,14 @@ namespace ProyectoFinal
 {
     class GenerarSQL
     {
-        public string nombre { get; set; }
+        public string bbDd { get; set; }
+        public string tabla { get; set; }
         public List<Campo> listAtributos { get; set; }
 
-        public GenerarSQL(string nombre, List<Campo> listAtributos)
+        public GenerarSQL(string bbDD,string tabla, List<Campo> listAtributos)
         {
-            this.nombre = nombre;
+            this.bbDd = this.bbDd;
+            this.tabla = this.tabla;
             this.listAtributos = listAtributos;
         }
 

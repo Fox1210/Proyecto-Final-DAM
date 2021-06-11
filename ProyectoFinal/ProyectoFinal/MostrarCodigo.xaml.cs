@@ -67,6 +67,26 @@ namespace ProyectoFinal
                 case "sql":
                     this.Frame.Navigate(typeof(SqlCreate));
                     break;
+                case "java":
+                    this.Frame.Navigate(typeof(JavaClass));
+                    break;
+                default:
+                    Menu();
+                    break;
+            }
+        }
+
+        private void Menu()
+        {
+            int tipo = App.user.Type;
+            switch (tipo)
+            {
+                case 1:
+                    this.Frame.Navigate(typeof(PaginaInicioAdmin));
+                    break;
+                case 2:
+                    this.Frame.Navigate(typeof(PaginaInicioUser));
+                    break;
                 default:
                     this.Frame.Navigate(typeof(MainPage));
                     break;

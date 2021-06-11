@@ -10,15 +10,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:ConnectionId='2' x:Name="volver" Content="Volver" Margin="225,600,0,0" VerticalAlignment="Top" FontSize="30"                      Width="250" Height="50"/>
-        <Button x:ConnectionId='3' x:Name="generarBtn" Content="Generar" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250"                         />
+        <TextBlock x:ConnectionId='2' x:Name="NombreBBDDTextBlock" HorizontalAlignment="Left" Margin="303,102,0,0" Text="Nombre de la BBDD:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" />
+        <TextBox x:ConnectionId='3' x:Name="NombreBBDDTextBox" HorizontalAlignment="Left" Margin="640,102,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Nombre de la BBDD"/>
 
-        <TextBlock x:ConnectionId='4' x:Name="NombreClaseTextBlock" HorizontalAlignment="Left" Margin="303,160,0,0" Text="Nombre de la Tabla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
-        <TextBox x:ConnectionId='5' x:Name="NombreTextBox" HorizontalAlignment="Left" Margin="640,160,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Nombre de la clase"/>
+
+        <TextBlock x:ConnectionId='4' x:Name="NombreTablaTextBlock" HorizontalAlignment="Left" Margin="303,160,0,0" Text="Nombre de la Tabla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <TextBox x:ConnectionId='5' x:Name="NombreTablaTextBox" HorizontalAlignment="Left" Margin="640,160,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="300" PlaceholderText="Nombre de la Tabla"/>
 
         <!--<TextBlock x:Name="CampoTextBlock" HorizontalAlignment="Left" Margin="307,236,0,0" Text="Atributos de la clase:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>-->
         <Button x:ConnectionId='6' x:Name="AñadirCampoBtn" Content="Añadir Campo" Margin="303,236,0,0" VerticalAlignment="Top" Height="53" Width="637" FontSize="30"                             />
-        <my:DataGrid x:ConnectionId='7' x:Name="CampoDataGrid"  Margin="0,330,0,0" AutoGenerateColumns="True"                               IsReadOnly="True"                   Height="200" VerticalAlignment="Top" HorizontalAlignment="Center" Width="980"  />
+        <my:DataGrid x:ConnectionId='7' x:Name="CampoDataGrid"  Margin="150,330,150,0" AutoGenerateColumns="True"                               IsReadOnly="True"                   Height="200" VerticalAlignment="Top"  />
+
+        <Button x:ConnectionId='8' x:Name="volver" Content="Volver" Margin="225,600,0,0" VerticalAlignment="Top" FontSize="30"                      Width="250" Height="50"/>
+        <Button x:ConnectionId='9' x:Name="generarBtn" Content="Generar" Margin="805,600,0,0" VerticalAlignment="Top" FontSize="30" Height="50" Width="250"                         />
     </Grid>
 </Page>
 
