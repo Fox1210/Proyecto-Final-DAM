@@ -62,22 +62,6 @@ namespace ProyectoFinal
 
         private void volver_Click(object sender, RoutedEventArgs e)
         {
-            switch (lenguaje)
-            {
-                case "sql":
-                    this.Frame.Navigate(typeof(SqlCreate));
-                    break;
-                case "java":
-                    this.Frame.Navigate(typeof(JavaClass));
-                    break;
-                default:
-                    Menu();
-                    break;
-            }
-        }
-
-        private void Menu()
-        {
             int tipo = App.user.Type;
             switch (tipo)
             {
@@ -92,5 +76,7 @@ namespace ProyectoFinal
                     break;
             }
         }
+
+        
     }
 }

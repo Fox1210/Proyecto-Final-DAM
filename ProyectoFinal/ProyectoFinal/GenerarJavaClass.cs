@@ -104,7 +104,7 @@ namespace ProyectoFinal
             foreach (Atributo atributo in listAtriburos)
             {
                 string get = $"\tpublic {atributo.Tipo} get{atributo.Nombre}(){{\n\t\treturn {atributo.Nombre};\n\t}}\n";
-                string set = $"\tpublic {atributo.Tipo} set{atributo.Nombre}({atributo.Tipo} {atributo.Nombre}){{\n\t\tthis.{atributo.Nombre} = {atributo.Nombre};\n\t}}\n";
+                string set = $"\tpublic set{atributo.Nombre}({atributo.Tipo} {atributo.Nombre}){{\n\t\tthis.{atributo.Nombre} = {atributo.Nombre};\n\t}}\n";
                 result += get + set+"\n";
             }
 

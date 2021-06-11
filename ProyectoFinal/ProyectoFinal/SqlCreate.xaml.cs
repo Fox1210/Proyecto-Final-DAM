@@ -33,18 +33,23 @@ namespace ProyectoFinal
         }
         public override string ToString()
         {
-            return Nombre + " " + Tipo+" "+Tamaño;
+            return Nombre + " " + Tipo + " " + Tamaño;
         }
     }//Fin class Atributo
     public sealed partial class SqlCreate : Page
     {
         //Lista que toma los datos de la lista Global, la cual enlazamos con ItemSource="{x:Bind (Lista)}" al datagrid
         public List<Campo> campos = App.CampoList;
+        public bool isEmpty = true;
 
         public SqlCreate()
         {
             this.InitializeComponent();
             CampoDataGrid.ItemsSource = App.CampoList;
+            if (!isEmpty)
+            {
+
+            }
         }
 
         private async void mensaje(String mensaje)
@@ -56,6 +61,8 @@ namespace ProyectoFinal
         private void volver_Click(object sender, RoutedEventArgs e)
         {
             campos.Clear();
+            App.datosTabla[0] = String.Empty;
+            App.datosTabla[1] = String.Empty;
             switch (App.user.whatType())
             {
                 case "Administrador":
@@ -68,25 +75,68 @@ namespace ProyectoFinal
         }//Fin de volver
         private void generarBtn_Click(object sender, RoutedEventArgs e)
         {
-            string bbDD = NombreBBDDTextBox.Text;
-            string tabla = NombreTablaTextBox.Text;
-            List<Campo> listAtributos = (List<Campo>)CampoDataGrid.ItemsSource;
-            GenerarSQL sqlClass = new GenerarSQL(bbDD, tabla, listAtributos);
-            App.archivos.sqlCreate = sqlClass.generarClass();
+            if (chek())
+            {
 
-            this.Frame.Navigate(typeof(MostrarCodigo),"sql");
+                string bbDD = NombreBBDDTextBox.Text;
+                string tabla = NombreTablaTextBox.Text;
+                List<Campo> listAtributos = (List<Campo>)CampoDataGrid.ItemsSource;
+                GenerarSQL sqlClass = new GenerarSQL(bbDD, tabla, listAtributos);
+                App.archivos.sqlCreate = sqlClass.generarClass();
 
-            //// Create the file, or overwrite if the file exists.
-            //TextWriter textWriter = new StreamWriter("C:\\dev\\test.txt");//TODO sustituir la ruta de prueba por la ruta donde se debe genrar el Archivo
-            //// Add some information to the file.
-            //textWriter.WriteLine("hola");//TODO sustituir el texto de prueba por la classJava
-            //textWriter.Close();
+                this.Frame.Navigate(typeof(MostrarCodigo), "sql");
+
+                campos.Clear();
+                App.datosTabla[0] = String.Empty; 
+                App.datosTabla[1] = String.Empty;
+
+            }
 
         }//Fin de generarBtn_Click
+
+        private bool chek()
+        {
+            bool result = false;
+            if (NombreBBDDTextBox.Text != String.Empty)
+            {
+                if (NombreTablaTextBox.Text != String.Empty)
+                {
+                    result = true;
+                }
+                else
+                {
+                    mensaje("El campo Nombre de la Tabla no esta relleno");
+                }
+            }
+            else
+            {
+                mensaje("El campo Nombre BBDD no esta relleno");
+            }
+            return result;
+        }
+
         private void AñadirCampoBtn_Click(object sender, RoutedEventArgs e)
         {
+            if (relleno())
+            {
+                App.datosTabla[0] = NombreBBDDTextBox.Text;
+                App.datosTabla[1] = NombreTablaTextBox.Text;
+            }
             this.Frame.Navigate(typeof(SqlCreateCampo));
         }//Fin de AñadirCampoBtn_Click
+
+        private bool relleno()
+        {
+            bool result = false;
+            if (NombreBBDDTextBox.Text != String.Empty)
+            {
+                if (NombreTablaTextBox.Text != String.Empty)
+                {
+                    result = true;
+                }
+            }
+            return result;
+        }
 
         private void load(object sender, Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs e)
         {
@@ -95,6 +145,8 @@ namespace ProyectoFinal
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+                NombreBBDDTextBox.Text = App.datosTabla[0];
+                NombreTablaTextBox.Text = App.datosTabla[1];
             if (e.Parameter != null)
             {
                 string value = (string)e.Parameter;
@@ -106,20 +158,21 @@ namespace ProyectoFinal
 
         private void paramsBuilder(string[] word)
         {
-            if (word.Length < 3){}else
+            if (word.Length < 3) { }
+            else
             {
                 string dataType = word[0];
                 string dataName = word[1];
                 string dataSize = word[2];
-                addCampo(dataType, dataName,dataSize);
+                addCampo(dataType, dataName, dataSize);
             }
         }//Fin de paramsBuilder
-        
+
         public void addCampo(string dataType, string dataName, string dataSize)
         {
-            this.campos.Add(new Campo(dataType, dataName,dataSize));
+            this.campos.Add(new Campo(dataType, dataName, dataSize));
         }//Fin de addCampo
 
-        
+
     }
 }

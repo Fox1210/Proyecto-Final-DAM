@@ -58,6 +58,7 @@ namespace ProyectoFinal
         private void volver_Click(object sender, RoutedEventArgs e)
         {
             atributos.Clear();
+            App.datosClass = String.Empty;
             switch (App.user.whatType())
             {
                 case "Administrador":
@@ -75,6 +76,7 @@ namespace ProyectoFinal
         }//Fin de load
         private void generarBtn_Click(object sender, RoutedEventArgs e)
         {
+            
             if (NombreTextBox.Text != String.Empty)
             {
                 string nombre = NombreTextBox.Text;
@@ -83,6 +85,10 @@ namespace ProyectoFinal
                 App.archivos.classJava = javaClass.generarClass();
 
                 this.Frame.Navigate(typeof(MostrarCodigo), "java");
+
+                atributos.Clear();
+                App.datosClass = String.Empty;
+
             }
             else
             {
@@ -94,13 +100,13 @@ namespace ProyectoFinal
 
         private void AñadirAtributoBtn_Click(object sender, RoutedEventArgs e)
         {
+            App.datosClass = NombreTextBox.Text;
             this.Frame.Navigate(typeof(JavaClassAttributes));
         }//Fin de AñadirAtributoBtn_Click
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //Si no es null, lo pasamos a una variable, y dividimos el string en 2 segun el formato de llegada, que son
-            //2 palabras separadas por un . ejemplo: "String.Nombre", tras eso llama un metodo que hace el resto.
+            NombreTextBox.Text= App.datosClass;
             if (e.Parameter != null)
             {
                 string value = (string)e.Parameter;
@@ -110,13 +116,9 @@ namespace ProyectoFinal
             }
         }//Fin de OnNavigatedTo
 
-        //Metodo que se ocupa de añadir el equipo nuevo a la lista, 
         private void paramsBuilder(string[] word)
         {
-            //hacemos esto para que no crashee, ya que el metodo OnNavigatedTo se activa tambien al cargar el programa
-            //por primera vez, por tanto, e.Parameter seria igual a Null o "", dando lugar a un array de [1], y crasheando
-            //Por indexOutOfBound al llegar a teamProvincia = words[1], por eso para evitarlo, nos aseguramos de que no haga nada
-            //si no hay al menos 2 items en el Array.
+            
             if (word.Length < 2)
             {
 
