@@ -78,11 +78,11 @@ namespace ProyectoFinal
             if (chek())
             {
 
-                string bbDD = NombreBBDDTextBox.Text;
+                string bbDD = "proyecto_final_dam";//NombreBBDDTextBox.Text;
                 string tabla = NombreTablaTextBox.Text;
                 List<Campo> listAtributos = (List<Campo>)CampoDataGrid.ItemsSource;
                 GenerarSQL sqlClass = new GenerarSQL(bbDD, tabla, listAtributos);
-                App.archivos.sqlCreate = sqlClass.generarClass();
+                App.archivos.sqlCreate = sqlClass.generarCreate();
 
                 this.Frame.Navigate(typeof(MostrarCodigo), "sql");
 
