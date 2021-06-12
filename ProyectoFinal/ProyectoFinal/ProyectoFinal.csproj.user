@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\pablo\OneDrive\Desktop\Proyecto final\LogoPNG.png</Source>
+    <SmallTileSource>C:\Users\pablo\OneDrive\Desktop\Proyecto final\LogoPNG.png</SmallTileSource>
+    <MediumTileSource>C:\Users\pablo\OneDrive\Desktop\Proyecto final\LogoPNG.png</MediumTileSource>
+    <WideTileSource>C:\Users\pablo\OneDrive\Desktop\Proyecto final\LogoPNG.png</WideTileSource>
+    <LargeTileSource>C:\Users\pablo\OneDrive\Desktop\Proyecto final\LogoPNG.png</LargeTileSource>
+    <AppIconSource>C:\Users\pablo\OneDrive\Desktop\Proyecto final\LogoPNG.png</AppIconSource>
+    <SplashScreenSource>C:\Users\pablo\OneDrive\Desktop\Proyecto final\LogoPNG.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\pablo\OneDrive\Desktop\Proyecto final\LogoPNG.png</PackageLogoSource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+</Project>

@@ -41,11 +41,15 @@
           "dependencies": {
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
-              "version": "[6.2.10, )"
+              "version": "[6.2.12, )"
+            },
+            "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid": {
+              "target": "Package",
+              "version": "[7.0.2, )"
             },
             "MySql.Data": {
               "target": "Package",
-              "version": "[8.0.24, )"
+              "version": "[8.0.25, )"
             }
           },
           "imports": [
