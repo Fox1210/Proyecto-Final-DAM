@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,10 +18,20 @@ namespace ProyectoFinal
         //CONSTRUCTORES
         public GenerarJavaClass(string nombre, List<Atributo> listAtriburos)
         {
-            Inicio = $"public class {nombre} {{\n";
+            Inicio = $"public class {this.generaNombre(nombre)} {{\n";
             this.nombre = nombre;
             this.listAtriburos = listAtriburos;
             Fin = $"}}";
+        }
+
+        private object generaNombre(string nombre)
+        {
+            string result=nombre;
+            TextInfo myTI = new CultureInfo("en-US", false).TextInfo;
+            result = myTI.ToLower(result);//hola mundo
+            result = myTI.ToTitleCase(result);// Hola Mundo
+            result = result.Replace(" ", String.Empty);//HolaMundo
+            return result;
         }
 
         //METODES DE GENRACIÓN DE ARCHIVOS
