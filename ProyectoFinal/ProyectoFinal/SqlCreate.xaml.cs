@@ -46,10 +46,7 @@ namespace ProyectoFinal
         {
             this.InitializeComponent();
             CampoDataGrid.ItemsSource = App.CampoList;
-            if (!isEmpty)
-            {
-
-            }
+            
         }
 
         private async void mensaje(String mensaje)
@@ -78,7 +75,7 @@ namespace ProyectoFinal
             if (chek())
             {
 
-                string bbDD = "proyecto_final_dam";//NombreBBDDTextBox.Text;
+                string bbDD = NombreBBDDTextBox.Text;
                 string tabla = NombreTablaTextBox.Text;
                 List<Campo> listAtributos = (List<Campo>)CampoDataGrid.ItemsSource;
                 GenerarSQL sqlClass = new GenerarSQL(bbDD, tabla, listAtributos);
