@@ -9,7 +9,14 @@ namespace ProyectoFinal
 {
     class ConnectionBBDD
     {
-        public const string connectionString = "server=127.0.0.1; Port=3306;Database=proyecto_final_dam;Uid=pablo;password=pablo";
+        public const string server = "127.0.0.1";               // Servidor al que nos conectamos
+        public const string port = "3306";                      // Puerto por el que nos conectamos
+        public const string database = "proyecto_final_dam";    // BBDD a la que nos conectamos
+        public const string userID = "pablo";                   // Usuario con permiso total en la BBDD
+        public const string password = "pablo";                 // Contraseña del Usuario
+
+
+        public string connectionString = $"server={server}; Port={port};Database={database};Uid={userID};password={password}";
 
         public ConnectionBBDD()
         {

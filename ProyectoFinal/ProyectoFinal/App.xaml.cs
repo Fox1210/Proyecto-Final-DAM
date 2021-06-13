@@ -28,7 +28,7 @@ namespace ProyectoFinal
         internal static List<Atributo> AtributosList = new List<Atributo>();    // Lista de atributos de una clase JAva
         internal static List<Campo> CampoList = new List<Campo>();              // Lista de campos de una tabla MySQL
         internal static Archivos archivos = new Archivos();                     // Almacena el código generado
-        internal static string[] datosTabla = {String.Empty, String.Empty };    // Almacena los datos de form MySql
+        internal static string[] datosTabla = { String.Empty, String.Empty };    // Almacena los datos de form MySql
         internal static string datosClass = String.Empty;                       // Almacena los datos de form Java
 
         /// <summary>
