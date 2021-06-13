@@ -8,25 +8,28 @@ namespace ProyectoFinal
 {
     class Usuario
     {
-        
+
 
         public int IdUser { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public int Type { get; set; }
+        public int Boss { get; set; }
 
-        public Usuario(int idUser, string name, string password, int type)
+        public Usuario(int idUser, string name, string password, int type, int boss)
         {
             IdUser = idUser;
             Name = name;
             Password = password;
             Type = type;
+            Boss = boss;
         }
-        public Usuario( string name, string password, int type)
+        public Usuario(string name, string password, int type, int boss)
         {
             Name = name;
             Password = password;
             Type = type;
+            Boss = boss;
         }
         public Usuario()
         {
@@ -39,11 +42,14 @@ namespace ProyectoFinal
         }
         public bool isEmpty()
         {
-            if (IdUser == 0 | Name == String.Empty | Password == String.Empty | Type == 0)
+            if (IdUser == 0 & Name == String.Empty & Password == String.Empty & Type == 0 & Boss == 0)
             {
                 return true;
             }
-            else { return false; }
+            else
+            {
+                return false;
+            }
 
         }
         public bool isUser()

@@ -85,6 +85,19 @@ namespace ProyectoFinal
                 App.archivos.classJava = javaClass.generarClass();
 
                 this.Frame.Navigate(typeof(MostrarCodigo), "java");
+                //inserta el proyecto en bbdd
+                DateTime thisDay = DateTime.Today;
+                string fecha = thisDay.ToString("d");
+                Proyecto newProyect = new Proyecto(App.user.IdUser,"Java",fecha);
+                bool realizado = App.bbdd.insertNewProyecto(newProyect);
+                if (realizado)
+                {
+                    Console.WriteLine("se ha añadido un proyecto con exito");
+                }
+                else
+                {
+                    Console.WriteLine("se ha producido un error al añadir el proyecto a la bbdd");
+                }
 
                 atributos.Clear();
                 App.datosClass = String.Empty;

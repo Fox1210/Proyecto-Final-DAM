@@ -72,7 +72,7 @@ namespace ProyectoFinal
             {
                 type = 2;
             }
-            Usuario newUser = new Usuario(NewUserNameTextBlock.Text, NewUserPasswordBox.Password, type);
+            Usuario newUser = new Usuario(NewUserNameTextBlock.Text, NewUserPasswordBox.Password, type, App.user.IdUser);
             bool realizado = App.bbdd.insertNewUser(newUser);
             if (realizado)
             {

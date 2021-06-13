@@ -23,7 +23,7 @@ namespace ProyectoFinal
                 //Codigo para un Select 
                 connection.Open();//abre la conexion con la bbdd
                 MySqlCommand command = new MySqlCommand();
-                command.CommandText = "select * from usuario";
+                command.CommandText = "select * from usuarios";
                 command.Connection = connection;
 
                 List<Usuario> userList = new List<Usuario>();
@@ -36,6 +36,7 @@ namespace ProyectoFinal
                         user.Name = reader["name"].ToString();
                         user.Password = reader["Password"].ToString();
                         user.Type = Convert.ToInt32(reader["Type"]);
+                        user.Boss = Convert.ToInt32(reader["Supervisor"]);
                         userList.Add(user);
                     }
                 }
@@ -51,7 +52,7 @@ namespace ProyectoFinal
                 //Codigo para un Select 
                 connection.Open();//abre la conexion con la bbdd
                 MySqlCommand command = new MySqlCommand();
-                command.CommandText = $"SELECT * FROM `usuario`as us WHERE us.Name='{username}' AND us.Password='{password}'";
+                command.CommandText = $"SELECT * FROM `usuarios`as us WHERE us.Nombre='{username}' AND us.Password='{password}'";
                 command.Connection = connection;
 
                 Usuario user = new Usuario();
@@ -60,9 +61,10 @@ namespace ProyectoFinal
                     while (reader.Read())
                     {
                         user.IdUser = Convert.ToInt32(reader["IdUser"]);
-                        user.Name = reader["name"].ToString();
+                        user.Name = reader["Nombre"].ToString();
                         user.Password = reader["Password"].ToString();
                         user.Type = Convert.ToInt32(reader["Type"]);
+                        user.Boss = Convert.ToInt32(reader["Supervisor"]);
                     }
                 }
                 return user;
@@ -77,7 +79,7 @@ namespace ProyectoFinal
                 //Codigo para un Select 
                 connection.Open();//abre la conexion con la bbdd
                 MySqlCommand command = new MySqlCommand();
-                command.CommandText = $"UPDATE `usuario` SET `Password`='{password}' WHERE `IdUser`={usuario.IdUser};";
+                command.CommandText = $"UPDATE `usuarios` SET `Password`='{password}' WHERE `IdUser`={usuario.IdUser};";
                 command.Connection = connection;
 
                 int reader = command.ExecuteNonQuery();
@@ -94,7 +96,29 @@ namespace ProyectoFinal
                 //Codigo para un Select 
                 connection.Open();//abre la conexion con la bbdd
                 MySqlCommand command = new MySqlCommand();
-                command.CommandText = $"INSERT INTO `usuario`(`IdUser`, `Name`, `Password`, `Type`) VALUES (null,'{usuario.Name}','{usuario.Password}','{usuario.Type}');";
+                command.CommandText = $"INSERT INTO `usuarios`(`IdUser`, `Nombre`, `Password`, `Type`, `Supervisor`) VALUES (null,'{usuario.Name}','{usuario.Password}','{usuario.Type}','{usuario.Boss}');";
+                command.Connection = connection;
+                try
+                {
+                    command.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
+
+
+            }
+        }//Fin insertNewUser
+        public bool insertNewProyecto(Proyecto proyecto)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                //Codigo para un Select 
+                connection.Open();//abre la conexion con la bbdd
+                MySqlCommand command = new MySqlCommand();
+                command.CommandText = $"INSERT INTO `proyecto`(`IdProyecto`, `user`, `lenguaje`, `fecha`) VALUES (null,'{proyecto.User}','{proyecto.lenguaje}','{proyecto.fecha}');";
                 command.Connection = connection;
                 try
                 {

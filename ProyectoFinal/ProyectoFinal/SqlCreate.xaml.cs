@@ -86,6 +86,20 @@ namespace ProyectoFinal
 
                 this.Frame.Navigate(typeof(MostrarCodigo), "sql");
 
+                //inserta el proyecto en bbdd
+                DateTime thisDay = DateTime.Today;
+                string fecha = thisDay.ToString("d");
+                Proyecto newProyect = new Proyecto(App.user.IdUser, "SQL", fecha);
+                bool realizado = App.bbdd.insertNewProyecto(newProyect);
+                if (realizado)
+                {
+                    Console.WriteLine("se ha añadido un proyecto con exito");
+                }
+                else
+                {
+                    Console.WriteLine("se ha producido un error al añadir el proyecto a la bbdd");
+                }
+
                 campos.Clear();
                 App.datosTabla[0] = String.Empty; 
                 App.datosTabla[1] = String.Empty;

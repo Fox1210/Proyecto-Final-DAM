@@ -22,13 +22,14 @@ namespace ProyectoFinal
     /// </summary>
     sealed partial class App : Application
     {
-        internal static Usuario user = new Usuario();
-        internal static ConnectionBBDD bbdd = new ConnectionBBDD();
-        internal static List<Atributo> AtributosList = new List<Atributo>();
-        internal static List<Campo> CampoList = new List<Campo>();
-        internal static Archivos archivos = new Archivos();
-        internal static string[] datosTabla = {String.Empty, String.Empty };
-        internal static string datosClass = String.Empty;
+        internal static Usuario user = new Usuario();                           // Usuario en uso de la APP
+        internal static ConnectionBBDD bbdd = new ConnectionBBDD();             // Conexión con la BBDD
+
+        internal static List<Atributo> AtributosList = new List<Atributo>();    // Lista de atributos de una clase JAva
+        internal static List<Campo> CampoList = new List<Campo>();              // Lista de campos de una tabla MySQL
+        internal static Archivos archivos = new Archivos();                     // Almacena el código generado
+        internal static string[] datosTabla = {String.Empty, String.Empty };    // Almacena los datos de form MySql
+        internal static string datosClass = String.Empty;                       // Almacena los datos de form Java
 
         /// <summary>
         /// Inicializa el objeto de aplicación Singleton. Esta es la primera línea de código creado
