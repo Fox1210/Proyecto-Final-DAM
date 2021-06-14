@@ -14,4 +14,4 @@ En caso de que se realice alguna prueba en un dispositivo debe configurar la cla
 
 Enlace al video: https://drive.google.com/file/d/1_Xca6zUyWYQv6UMUgETiQIpAhQsQmDXw/view?usp=sharing
 Enlace al repositorio: https://github.com/Fox1210/Proyecto-Final-DAM.git
-Enlace al ejecutable:https://drive.google.com/file/d/1S7tIRWIeNy2r3xcBlefcD1g2VW7f-lrm/view?usp=sharing
+Enlace al ejecutable: https://drive.google.com/file/d/1S7tIRWIeNy2r3xcBlefcD1g2VW7f-lrm/view?usp=sharing
