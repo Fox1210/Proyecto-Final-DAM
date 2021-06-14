@@ -54,6 +54,7 @@ namespace ProyectoFinal
 
                             //modificamos el usuario en eso Actual
                             App.user.Password = NewPasswordBox.Password;
+                            this.Frame.Navigate(typeof(MainPage));
 
                         }
                         else
